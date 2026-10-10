@@ -1,0 +1,12 @@
+node_modules/
+npm-debug.log*
+.DS_Store
+*.log
+__pycache__/
+*.pyc
+.env
+.env.*
+# large third-party snapshot: not redistributed (see README)
+npm-all.zip
+osv-mal-2026/
+coverage/

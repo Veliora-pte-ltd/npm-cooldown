@@ -1,0 +1,2075 @@
+{
+ "population": {
+  "mal_published_2026": 12856,
+  "withdrawn": 163,
+  "analysed": 12693,
+  "packages": 12692,
+  "whole_package_range": 6619,
+  "http": {
+   "200": 11746,
+   "404": 947
+  },
+  "by_month": {
+   "2026-01": 527,
+   "2026-02": 330,
+   "2026-03": 1047,
+   "2026-04": 619,
+   "2026-05": 1491,
+   "2026-06": 1414,
+   "2026-07": 2056,
+   "2026-08": 4078,
+   "2026-09": 905,
+   "2026-10": 226
+  }
+ },
+ "timing": {
+  "classes": {
+   "removed_known": 10398,
+   "_flag_date_only_published": 823,
+   "no_publish_time": 948,
+   "still_listed": 675,
+   "removed_time_unknown": 672
+  },
+  "negative_removal_windows_clipped": 5,
+  "t_gone_source": {
+   "security-holding": 6537,
+   "unpublished.time": 3222,
+   "none": 1623,
+   "time.modified": 639,
+   "removed-time-unknown": 672
+  },
+  "t_pub_source": {
+   "time.created": 2534,
+   "time[version]": 9211,
+   "none": 948
+  },
+  "usable": {
+   "k": 11073,
+   "n": 12693,
+   "share": 0.8724,
+   "wilson": [
+    0.8665,
+    0.8781
+   ]
+  },
+  "with_t_pub": {
+   "k": 11745,
+   "n": 12693,
+   "share": 0.9253,
+   "wilson": [
+    0.9206,
+    0.9298
+   ]
+  },
+  "with_removal_time": {
+   "k": 10398,
+   "n": 12693,
+   "share": 0.8192,
+   "wilson": [
+    0.8124,
+    0.8258
+   ]
+  },
+  "removed_known_hours": {
+   "n": 10398,
+   "median": 10.8,
+   "p25": 0.08,
+   "p75": 322.49
+  }
+ },
+ "still_listed": {
+  "records": 675,
+  "packages": 675,
+  "share_of_usable": {
+   "k": 675,
+   "n": 11073,
+   "share": 0.061,
+   "wilson": [
+    0.0567,
+    0.0656
+   ]
+  },
+  "median_days_listed": 84.3,
+  "note": "Counts only. Package names are deliberately not reported."
+ },
+ "cooldown": {
+  "1h": {
+   "removal_simple": {
+    "k": 3225,
+    "n": 11073,
+    "share": 0.2912,
+    "wilson": [
+     0.2829,
+     0.2998
+    ]
+   },
+   "removal_km_stopped": 0.2912,
+   "flag_or_removal_km_stopped": 0.3911
+  },
+  "1d": {
+   "removal_simple": {
+    "k": 5825,
+    "n": 11072,
+    "share": 0.5261,
+    "wilson": [
+     0.5168,
+     0.5354
+    ]
+   },
+   "removal_km_stopped": 0.5261,
+   "flag_or_removal_km_stopped": 0.6795
+  },
+  "3d": {
+   "removal_simple": {
+    "k": 6773,
+    "n": 11070,
+    "share": 0.6118,
+    "wilson": [
+     0.6027,
+     0.6209
+    ]
+   },
+   "removal_km_stopped": 0.6117,
+   "flag_or_removal_km_stopped": 0.7764
+  },
+  "7d": {
+   "removal_simple": {
+    "k": 7430,
+    "n": 11061,
+    "share": 0.6717,
+    "wilson": [
+     0.6629,
+     0.6804
+    ]
+   },
+   "removal_km_stopped": 0.6711,
+   "flag_or_removal_km_stopped": 0.8261
+  },
+  "14d": {
+   "removal_simple": {
+    "k": 7850,
+    "n": 11042,
+    "share": 0.7109,
+    "wilson": [
+     0.7024,
+     0.7193
+    ]
+   },
+   "removal_km_stopped": 0.7093,
+   "flag_or_removal_km_stopped": 0.8649
+  },
+  "flag_before_publish_clipped": 205,
+  "flag_population": 11745
+ },
+ "km_curve": {
+  "hours": [
+   0.25,
+   0.5,
+   1,
+   2,
+   3,
+   6,
+   12,
+   24,
+   48,
+   72,
+   120,
+   168,
+   240,
+   336,
+   504,
+   720
+  ],
+  "removal": [
+   0.7517,
+   0.7303,
+   0.7088,
+   0.6736,
+   0.6595,
+   0.6139,
+   0.5241,
+   0.4739,
+   0.4349,
+   0.3883,
+   0.3492,
+   0.3289,
+   0.3117,
+   0.2907,
+   0.2577,
+   0.2234
+  ],
+  "flag_or_removal": [
+   0.6925,
+   0.6511,
+   0.6089,
+   0.5361,
+   0.4989,
+   0.4,
+   0.359,
+   0.3205,
+   0.2765,
+   0.2236,
+   0.1905,
+   0.1739,
+   0.1571,
+   0.1351,
+   0.1094,
+   0.0908
+  ],
+  "hijack": [
+   0.9966,
+   0.9932,
+   0.983,
+   0.9727,
+   0.9625,
+   0.8348,
+   0.7411,
+   0.6252,
+   0.5843,
+   0.5826,
+   0.5758,
+   0.5724,
+   0.5724,
+   0.5673,
+   0.5604,
+   0.5587
+  ],
+  "hijack_flag_or_removal": [
+   0.937,
+   0.9294,
+   0.92,
+   0.8796,
+   0.7836,
+   0.1834,
+   0.159,
+   0.1308,
+   0.0527,
+   0.048,
+   0.0395,
+   0.0254,
+   0.0226,
+   0.0198,
+   0.0075,
+   0.0047
+  ]
+ },
+ "npm12": {
+  "classes": {
+   "unknown": 6871,
+   "install_only": 3089,
+   "no_install": 2094,
+   "install_plus": 639
+  },
+  "stated_vector": {
+   "k": 5822,
+   "n": 12693,
+   "share": 0.4587,
+   "wilson": [
+    0.45,
+    0.4674
+   ]
+  },
+  "install_only_of_stated": {
+   "k": 3089,
+   "n": 5822,
+   "share": 0.5306,
+   "wilson": [
+    0.5177,
+    0.5434
+   ]
+  },
+  "install_any_of_stated": {
+   "k": 3728,
+   "n": 5822,
+   "share": 0.6403,
+   "wilson": [
+    0.6279,
+    0.6526
+   ]
+  },
+  "install_only_of_all": {
+   "k": 3089,
+   "n": 12693,
+   "share": 0.2434,
+   "wilson": [
+    0.236,
+    0.2509
+   ]
+  }
+ },
+ "validation": {
+  "labelled_n": 60,
+  "exact": {
+   "k": 51,
+   "n": 60,
+   "share": 0.85,
+   "wilson": [
+    0.7389,
+    0.919
+   ]
+  },
+  "npm12_binary": {
+   "k": 53,
+   "n": 60,
+   "share": 0.8833,
+   "wilson": [
+    0.7782,
+    0.9423
+   ]
+  },
+  "unclear_n": 30,
+  "unclear_with_stated_vector": {
+   "k": 2,
+   "n": 30,
+   "share": 0.0667,
+   "wilson": [
+    0.0185,
+    0.2132
+   ]
+  },
+  "unclear_missed_install_script": 0
+ },
+ "either_all_conservative": {
+  "1d": {
+   "k": 7105,
+   "n": 11072,
+   "share": 0.6417,
+   "wilson": [
+    0.6327,
+    0.6506
+   ]
+  },
+  "3d": {
+   "k": 7877,
+   "n": 11070,
+   "share": 0.7116,
+   "wilson": [
+    0.7031,
+    0.7199
+   ]
+  },
+  "7d": {
+   "k": 8361,
+   "n": 11061,
+   "share": 0.7559,
+   "wilson": [
+    0.7478,
+    0.7638
+   ]
+  },
+  "14d": {
+   "k": 8707,
+   "n": 11042,
+   "share": 0.7885,
+   "wilson": [
+    0.7808,
+    0.7961
+   ]
+  }
+ },
+ "matrix": {
+  "1d": {
+   "both": {
+    "k": 1171,
+    "n": 5007,
+    "share": 0.2339,
+    "wilson": [
+     0.2224,
+     0.2458
+    ]
+   },
+   "scripts_only": {
+    "k": 1280,
+    "n": 5007,
+    "share": 0.2556,
+    "wilson": [
+     0.2437,
+     0.2679
+    ]
+   },
+   "cooldown_only": {
+    "k": 1378,
+    "n": 5007,
+    "share": 0.2752,
+    "wilson": [
+     0.263,
+     0.2878
+    ]
+   },
+   "neither": {
+    "k": 1178,
+    "n": 5007,
+    "share": 0.2353,
+    "wilson": [
+     0.2237,
+     0.2472
+    ]
+   },
+   "n": 5007
+  },
+  "3d": {
+   "both": {
+    "k": 1345,
+    "n": 5005,
+    "share": 0.2687,
+    "wilson": [
+     0.2566,
+     0.2812
+    ]
+   },
+   "scripts_only": {
+    "k": 1104,
+    "n": 5005,
+    "share": 0.2206,
+    "wilson": [
+     0.2093,
+     0.2323
+    ]
+   },
+   "cooldown_only": {
+    "k": 1600,
+    "n": 5005,
+    "share": 0.3197,
+    "wilson": [
+     0.3069,
+     0.3327
+    ]
+   },
+   "neither": {
+    "k": 956,
+    "n": 5005,
+    "share": 0.191,
+    "wilson": [
+     0.1804,
+     0.2021
+    ]
+   },
+   "n": 5005
+  },
+  "7d": {
+   "both": {
+    "k": 1513,
+    "n": 4999,
+    "share": 0.3027,
+    "wilson": [
+     0.2901,
+     0.3155
+    ]
+   },
+   "scripts_only": {
+    "k": 931,
+    "n": 4999,
+    "share": 0.1862,
+    "wilson": [
+     0.1757,
+     0.1973
+    ]
+   },
+   "cooldown_only": {
+    "k": 1811,
+    "n": 4999,
+    "share": 0.3623,
+    "wilson": [
+     0.3491,
+     0.3757
+    ]
+   },
+   "neither": {
+    "k": 744,
+    "n": 4999,
+    "share": 0.1488,
+    "wilson": [
+     0.1392,
+     0.159
+    ]
+   },
+   "n": 4999
+  },
+  "14d": {
+   "both": {
+    "k": 1582,
+    "n": 4990,
+    "share": 0.317,
+    "wilson": [
+     0.3043,
+     0.3301
+    ]
+   },
+   "scripts_only": {
+    "k": 857,
+    "n": 4990,
+    "share": 0.1717,
+    "wilson": [
+     0.1615,
+     0.1825
+    ]
+   },
+   "cooldown_only": {
+    "k": 1886,
+    "n": 4990,
+    "share": 0.378,
+    "wilson": [
+     0.3646,
+     0.3915
+    ]
+   },
+   "neither": {
+    "k": 665,
+    "n": 4990,
+    "share": 0.1333,
+    "wilson": [
+     0.1241,
+     0.143
+    ]
+   },
+   "n": 4990
+  }
+ },
+ "hijack": {
+  "definition": "specific versions listed; >=5 earlier versions; first earlier version >=90 days before",
+  "records": 1063,
+  "packages": 1063,
+  "classes": {
+   "still_listed": 92,
+   "removed_time_unknown": 476,
+   "removed_known": 495
+  },
+  "vector": {
+   "unknown": 274,
+   "install_plus": 47,
+   "install_only": 728,
+   "no_install": 14
+  },
+  "usable": 587,
+  "cooldown": {
+   "1h": {
+    "removal_simple": {
+     "k": 10,
+     "n": 587,
+     "share": 0.017,
+     "wilson": [
+      0.0093,
+      0.0311
+     ]
+    },
+    "removal_km_stopped": 0.017
+   },
+   "1d": {
+    "removal_simple": {
+     "k": 220,
+     "n": 587,
+     "share": 0.3748,
+     "wilson": [
+      0.3366,
+      0.4146
+     ]
+    },
+    "removal_km_stopped": 0.3748
+   },
+   "3d": {
+    "removal_simple": {
+     "k": 245,
+     "n": 587,
+     "share": 0.4174,
+     "wilson": [
+      0.3781,
+      0.4577
+     ]
+    },
+    "removal_km_stopped": 0.4174
+   },
+   "7d": {
+    "removal_simple": {
+     "k": 251,
+     "n": 587,
+     "share": 0.4276,
+     "wilson": [
+      0.3882,
+      0.468
+     ]
+    },
+    "removal_km_stopped": 0.4276
+   },
+   "14d": {
+    "removal_simple": {
+     "k": 254,
+     "n": 587,
+     "share": 0.4327,
+     "wilson": [
+      0.3932,
+      0.4731
+     ]
+    },
+    "removal_km_stopped": 0.4327
+   }
+  },
+  "removed_known_hours": {
+   "n": 495,
+   "median": 99.71
+  },
+  "matrix_7d": {
+   "both": {
+    "k": 195,
+    "n": 504,
+    "share": 0.3869,
+    "wilson": [
+     0.3454,
+     0.4301
+    ]
+   },
+   "scripts_only": {
+    "k": 262,
+    "n": 504,
+    "share": 0.5198,
+    "wilson": [
+     0.4762,
+     0.5631
+    ]
+   },
+   "cooldown_only": {
+    "k": 30,
+    "n": 504,
+    "share": 0.0595,
+    "wilson": [
+     0.042,
+     0.0837
+    ]
+   },
+   "neither": {
+    "k": 17,
+    "n": 504,
+    "share": 0.0337,
+    "wilson": [
+     0.0212,
+     0.0534
+    ]
+   },
+   "n": 504
+  },
+  "still_listed": {
+   "records": 92,
+   "packages": 92
+  },
+  "flag_or_removal": {
+   "n": 1063,
+   "median_hours": 3.67,
+   "stopped": {
+    "1h": {
+     "k": 85,
+     "n": 1063,
+     "share": 0.08,
+     "wilson": [
+      0.0651,
+      0.0978
+     ]
+    },
+    "1d": {
+     "k": 924,
+     "n": 1063,
+     "share": 0.8692,
+     "wilson": [
+      0.8476,
+      0.8882
+     ]
+    },
+    "3d": {
+     "k": 1012,
+     "n": 1063,
+     "share": 0.952,
+     "wilson": [
+      0.9375,
+      0.9633
+     ]
+    },
+    "7d": {
+     "k": 1036,
+     "n": 1063,
+     "share": 0.9746,
+     "wilson": [
+      0.9633,
+      0.9825
+     ]
+    },
+    "14d": {
+     "k": 1042,
+     "n": 1063,
+     "share": 0.9802,
+     "wilson": [
+      0.97,
+      0.987
+     ]
+    }
+   }
+  },
+  "t_gone_source_of_removed_known": {
+   "security-holding": 9,
+   "unpublished.time": 3,
+   "time.modified": 483
+  },
+  "vector_hand_corrected": {
+   "unknown": 209,
+   "install_plus": 16,
+   "install_only": 824,
+   "no_install": 14
+  },
+  "hand_coded_records": 733,
+  "install_only_of_stated_hand": {
+   "k": 824,
+   "n": 854,
+   "share": 0.9649,
+   "wilson": [
+    0.9503,
+    0.9753
+   ]
+  },
+  "install_only_of_all_hand": {
+   "k": 824,
+   "n": 1063,
+   "share": 0.7752,
+   "wilson": [
+    0.7491,
+    0.7992
+   ]
+  },
+  "matrix_7d_flag_hand": {
+   "both": {
+    "k": 817,
+    "n": 854,
+    "share": 0.9567,
+    "wilson": [
+     0.9409,
+     0.9684
+    ]
+   },
+   "scripts_only": {
+    "k": 7,
+    "n": 854,
+    "share": 0.0082,
+    "wilson": [
+     0.004,
+     0.0168
+    ]
+   },
+   "cooldown_only": {
+    "k": 26,
+    "n": 854,
+    "share": 0.0304,
+    "wilson": [
+     0.0209,
+     0.0442
+    ]
+   },
+   "neither": {
+    "k": 4,
+    "n": 854,
+    "share": 0.0047,
+    "wilson": [
+     0.0018,
+     0.012
+    ]
+   },
+   "n": 854
+  },
+  "matrix_1d_flag_hand": {
+   "both": {
+    "k": 777,
+    "n": 854,
+    "share": 0.9098,
+    "wilson": [
+     0.8887,
+     0.9273
+    ]
+   },
+   "scripts_only": {
+    "k": 47,
+    "n": 854,
+    "share": 0.055,
+    "wilson": [
+     0.0416,
+     0.0724
+    ]
+   },
+   "cooldown_only": {
+    "k": 18,
+    "n": 854,
+    "share": 0.0211,
+    "wilson": [
+     0.0134,
+     0.0331
+    ]
+   },
+   "neither": {
+    "k": 12,
+    "n": 854,
+    "share": 0.0141,
+    "wilson": [
+     0.0081,
+     0.0244
+    ]
+   },
+   "n": 854
+  }
+ },
+ "campaigns": {
+  "shai_hulud_aug": {
+   "label": "Shai-Hulud 'Here We Go Again' worm (August 2026, began with keyv/cacheable)",
+   "code": "install_only",
+   "records": 444,
+   "in_hijack_subset": 360,
+   "rules_install_only": 404,
+   "median_hours_to_flag_or_removal": 4.76,
+   "stopped_7d_flag_or_removal": {
+    "k": 429,
+    "n": 430,
+    "share": 0.9977,
+    "wilson": [
+     0.9869,
+     0.9996
+    ]
+   },
+   "stopped_1d_flag_or_removal": {
+    "k": 429,
+    "n": 430,
+    "share": 0.9977,
+    "wilson": [
+     0.9869,
+     0.9996
+    ]
+   }
+  },
+  "mini_shai_hulud_atool": {
+   "label": "Mini Shai-Hulud, compromised 'atool' account (@antv and others)",
+   "code": "install_only",
+   "records": 317,
+   "in_hijack_subset": 258,
+   "rules_install_only": 317,
+   "median_hours_to_flag_or_removal": 3.66,
+   "stopped_7d_flag_or_removal": {
+    "k": 316,
+    "n": 317,
+    "share": 0.9968,
+    "wilson": [
+     0.9823,
+     0.9994
+    ]
+   },
+   "stopped_1d_flag_or_removal": {
+    "k": 316,
+    "n": 317,
+    "share": 0.9968,
+    "wilson": [
+     0.9823,
+     0.9994
+    ]
+   }
+  },
+  "mini_shai_hulud_redhat": {
+   "label": "Mini Shai-Hulud, Red Hat Cloud Services trusted publisher",
+   "code": "install_only",
+   "records": 32,
+   "in_hijack_subset": 31,
+   "rules_install_only": 32,
+   "median_hours_to_flag_or_removal": 8.92,
+   "stopped_7d_flag_or_removal": {
+    "k": 32,
+    "n": 32,
+    "share": 1.0,
+    "wilson": [
+     0.8928,
+     1.0
+    ]
+   },
+   "stopped_1d_flag_or_removal": {
+    "k": 32,
+    "n": 32,
+    "share": 1.0,
+    "wilson": [
+     0.8928,
+     1.0
+    ]
+   }
+  },
+  "miasma_leo": {
+   "label": "Miasma worm, LeoPlatform packages (June 2026)",
+   "code": "install_only",
+   "records": 20,
+   "in_hijack_subset": 15,
+   "rules_install_only": 20,
+   "median_hours_to_flag_or_removal": 0.0,
+   "stopped_7d_flag_or_removal": {
+    "k": 20,
+    "n": 20,
+    "share": 1.0,
+    "wilson": [
+     0.8389,
+     1.0
+    ]
+   },
+   "stopped_1d_flag_or_removal": {
+    "k": 20,
+    "n": 20,
+    "share": 1.0,
+    "wilson": [
+     0.8389,
+     1.0
+    ]
+   }
+  },
+  "sap_cap": {
+   "label": "SAP CAP packages (April 2026)",
+   "code": "install_only",
+   "records": 4,
+   "in_hijack_subset": 4,
+   "rules_install_only": 4,
+   "median_hours_to_flag_or_removal": 0.0,
+   "stopped_7d_flag_or_removal": {
+    "k": 4,
+    "n": 4,
+    "share": 1.0,
+    "wilson": [
+     0.5101,
+     1.0
+    ]
+   },
+   "stopped_1d_flag_or_removal": {
+    "k": 4,
+    "n": 4,
+    "share": 1.0,
+    "wilson": [
+     0.5101,
+     1.0
+    ]
+   }
+  },
+  "mini_shai_hulud_back": {
+   "label": "'Mini Shai-Hulud is back' (TeamPCP; began with @tanstack Router/Start, 11 May 2026)",
+   "code": "install_only",
+   "records": 177,
+   "in_hijack_subset": 65,
+   "rules_install_only": 0,
+   "median_hours_to_flag_or_removal": 5.02,
+   "stopped_7d_flag_or_removal": {
+    "k": 171,
+    "n": 171,
+    "share": 1.0,
+    "wilson": [
+     0.978,
+     1.0
+    ]
+   },
+   "stopped_1d_flag_or_removal": {
+    "k": 171,
+    "n": 171,
+    "share": 1.0,
+    "wilson": [
+     0.978,
+     1.0
+    ]
+   }
+  }
+ },
+ "sensitivity": {
+  "exclude_time_modified": {
+   "1d": {
+    "k": 5524,
+    "n": 10433,
+    "share": 0.5295,
+    "wilson": [
+     0.5199,
+     0.539
+    ]
+   },
+   "7d": {
+    "k": 7081,
+    "n": 10422,
+    "share": 0.6794,
+    "wilson": [
+     0.6704,
+     0.6883
+    ]
+   },
+   "n": 10434
+  },
+  "version_publish_time_only": {
+   "1d": {
+    "k": 3368,
+    "n": 8538,
+    "share": 0.3945,
+    "wilson": [
+     0.3842,
+     0.4049
+    ]
+   },
+   "7d": {
+    "k": 4960,
+    "n": 8527,
+    "share": 0.5817,
+    "wilson": [
+     0.5712,
+     0.5921
+    ]
+   },
+   "n": 8539
+  },
+  "exclude_hijack_subset": {
+   "1d": {
+    "k": 5605,
+    "n": 10485,
+    "share": 0.5346,
+    "wilson": [
+     0.525,
+     0.5441
+    ]
+   },
+   "7d": {
+    "k": 7179,
+    "n": 10474,
+    "share": 0.6854,
+    "wilson": [
+     0.6765,
+     0.6942
+    ]
+   },
+   "n": 10486
+  },
+  "whole_package_records_only": {
+   "1d": {
+    "k": 3043,
+    "n": 6328,
+    "share": 0.4809,
+    "wilson": [
+     0.4686,
+     0.4932
+    ]
+   },
+   "7d": {
+    "k": 4161,
+    "n": 6328,
+    "share": 0.6576,
+    "wilson": [
+     0.6458,
+     0.6691
+    ]
+   },
+   "n": 6328
+  }
+ },
+ "by_month_7d": {
+  "2026-01": {
+   "k": 422,
+   "n": 511,
+   "share": 0.8258,
+   "wilson": [
+    0.7905,
+    0.8563
+   ]
+  },
+  "2026-02": {
+   "k": 238,
+   "n": 306,
+   "share": 0.7778,
+   "wilson": [
+    0.7279,
+    0.8208
+   ]
+  },
+  "2026-03": {
+   "k": 678,
+   "n": 909,
+   "share": 0.7459,
+   "wilson": [
+    0.7166,
+    0.7731
+   ]
+  },
+  "2026-04": {
+   "k": 355,
+   "n": 561,
+   "share": 0.6328,
+   "wilson": [
+    0.5921,
+    0.6717
+   ]
+  },
+  "2026-05": {
+   "k": 605,
+   "n": 1242,
+   "share": 0.4871,
+   "wilson": [
+    0.4594,
+    0.5149
+   ]
+  },
+  "2026-06": {
+   "k": 593,
+   "n": 1169,
+   "share": 0.5073,
+   "wilson": [
+    0.4786,
+    0.5359
+   ]
+  },
+  "2026-07": {
+   "k": 1043,
+   "n": 1860,
+   "share": 0.5608,
+   "wilson": [
+    0.5381,
+    0.5832
+   ]
+  },
+  "2026-08": {
+   "k": 2825,
+   "n": 3509,
+   "share": 0.8051,
+   "wilson": [
+    0.7916,
+    0.8178
+   ]
+  },
+  "2026-09": {
+   "k": 532,
+   "n": 806,
+   "share": 0.66,
+   "wilson": [
+    0.6267,
+    0.6919
+   ]
+  },
+  "2026-10": {
+   "k": 139,
+   "n": 188,
+   "share": 0.7394,
+   "wilson": [
+    0.6723,
+    0.7969
+   ]
+  }
+ },
+ "campaign_share_of_records": {
+  "k": 994,
+  "n": 12693,
+  "share": 0.0783,
+  "wilson": [
+   0.0738,
+   0.0831
+  ]
+ },
+ "pnpm_claim": {
+  "claim": "In most cases, malicious releases are discovered and removed from the registry within an hour.",
+  "removed_within_1h_simple": {
+   "k": 3225,
+   "n": 11073,
+   "share": 0.2912,
+   "wilson": [
+    0.2829,
+    0.2998
+   ]
+  },
+  "removed_within_1h_km": 0.2912,
+  "hijack_removed_within_1h_simple": {
+   "k": 10,
+   "n": 587,
+   "share": 0.017,
+   "wilson": [
+    0.0093,
+    0.0311
+   ]
+  },
+  "hijack_flag_or_removal_within_1h": {
+   "k": 85,
+   "n": 1063,
+   "share": 0.08,
+   "wilson": [
+    0.0651,
+    0.0978
+   ]
+  },
+  "removed_within_1h_excl_time_modified": {
+   "k": 3218,
+   "n": 10434,
+   "share": 0.3084,
+   "wilson": [
+    0.2996,
+    0.3173
+   ]
+  }
+ },
+ "fix_delay": {
+  "units_total": 4442,
+  "units_no_fix_time": 261,
+  "top1000_units_no_fix_time": 7,
+  "top1000": {
+   "units": 761,
+   "packages": 67,
+   "fix_before_advisory": {
+    "k": 730,
+    "n": 761,
+    "share": 0.9593,
+    "wilson": [
+     0.9428,
+     0.9712
+    ]
+   },
+   "1d": {
+    "zero_extra": {
+     "k": 581,
+     "n": 761,
+     "share": 0.7635,
+     "wilson": [
+      0.732,
+      0.7923
+     ]
+    },
+    "median": 0.0,
+    "mean": 0.18,
+    "median_if_delayed": 0.91,
+    "over_3_days": {
+     "k": 0,
+     "n": 761,
+     "share": 0.0,
+     "wilson": [
+      0.0,
+      0.005
+     ]
+    }
+   },
+   "3d": {
+    "zero_extra": {
+     "k": 484,
+     "n": 761,
+     "share": 0.636,
+     "wilson": [
+      0.6012,
+      0.6694
+     ]
+    },
+    "median": 0.0,
+    "mean": 0.85,
+    "median_if_delayed": 2.59,
+    "over_3_days": {
+     "k": 0,
+     "n": 761,
+     "share": 0.0,
+     "wilson": [
+      0.0,
+      0.005
+     ]
+    }
+   },
+   "7d": {
+    "zero_extra": {
+     "k": 391,
+     "n": 761,
+     "share": 0.5138,
+     "wilson": [
+      0.4783,
+      0.5492
+     ]
+    },
+    "median": 0.0,
+    "mean": 2.55,
+    "median_if_delayed": 5.97,
+    "over_3_days": {
+     "k": 287,
+     "n": 761,
+     "share": 0.3771,
+     "wilson": [
+      0.3434,
+      0.4121
+     ]
+    }
+   },
+   "14d": {
+    "zero_extra": {
+     "k": 318,
+     "n": 761,
+     "share": 0.4179,
+     "wilson": [
+      0.3833,
+      0.4532
+     ]
+    },
+    "median": 6.09,
+    "mean": 6.29,
+    "median_if_delayed": 12.83,
+    "over_3_days": {
+     "k": 405,
+     "n": 761,
+     "share": 0.5322,
+     "wilson": [
+      0.4967,
+      0.5674
+     ]
+    }
+   }
+  },
+  "all": {
+   "units": 4181,
+   "packages": 808,
+   "fix_before_advisory": {
+    "k": 4084,
+    "n": 4181,
+    "share": 0.9768,
+    "wilson": [
+     0.9718,
+     0.9809
+    ]
+   },
+   "1d": {
+    "zero_extra": {
+     "k": 3317,
+     "n": 4181,
+     "share": 0.7934,
+     "wilson": [
+      0.7808,
+      0.8054
+     ]
+    },
+    "median": 0.0,
+    "mean": 0.13,
+    "median_if_delayed": 0.71,
+    "over_3_days": {
+     "k": 0,
+     "n": 4181,
+     "share": 0.0,
+     "wilson": [
+      -0.0,
+      0.0009
+     ]
+    }
+   },
+   "3d": {
+    "zero_extra": {
+     "k": 2592,
+     "n": 4181,
+     "share": 0.6199,
+     "wilson": [
+      0.6051,
+      0.6345
+     ]
+    },
+    "median": 0.0,
+    "mean": 0.74,
+    "median_if_delayed": 2.16,
+    "over_3_days": {
+     "k": 0,
+     "n": 4181,
+     "share": 0.0,
+     "wilson": [
+      -0.0,
+      0.0009
+     ]
+    }
+   },
+   "7d": {
+    "zero_extra": {
+     "k": 1957,
+     "n": 4181,
+     "share": 0.4681,
+     "wilson": [
+      0.453,
+      0.4832
+     ]
+    },
+    "median": 0.41,
+    "mean": 2.54,
+    "median_if_delayed": 5.53,
+    "over_3_days": {
+     "k": 1717,
+     "n": 4181,
+     "share": 0.4107,
+     "wilson": [
+      0.3958,
+      0.4257
+     ]
+    }
+   },
+   "14d": {
+    "zero_extra": {
+     "k": 1398,
+     "n": 4181,
+     "share": 0.3344,
+     "wilson": [
+      0.3202,
+      0.3488
+     ]
+    },
+    "median": 7.41,
+    "mean": 6.81,
+    "median_if_delayed": 11.75,
+    "over_3_days": {
+     "k": 2606,
+     "n": 4181,
+     "share": 0.6233,
+     "wilson": [
+      0.6085,
+      0.6379
+     ]
+    }
+   }
+  },
+  "top1000_by_severity": {
+   "CRITICAL": {
+    "units": 20,
+    "packages": 8,
+    "fix_before_advisory": {
+     "k": 20,
+     "n": 20,
+     "share": 1.0,
+     "wilson": [
+      0.8389,
+      1.0
+     ]
+    },
+    "1d": {
+     "zero_extra": {
+      "k": 11,
+      "n": 20,
+      "share": 0.55,
+      "wilson": [
+       0.3421,
+       0.7418
+      ]
+     },
+     "median": 0.0,
+     "mean": 0.36,
+     "median_if_delayed": 0.89,
+     "over_3_days": {
+      "k": 0,
+      "n": 20,
+      "share": 0.0,
+      "wilson": [
+       -0.0,
+       0.1611
+      ]
+     }
+    },
+    "3d": {
+     "zero_extra": {
+      "k": 11,
+      "n": 20,
+      "share": 0.55,
+      "wilson": [
+       0.3421,
+       0.7418
+      ]
+     },
+     "median": 0.0,
+     "mean": 1.26,
+     "median_if_delayed": 2.89,
+     "over_3_days": {
+      "k": 0,
+      "n": 20,
+      "share": 0.0,
+      "wilson": [
+       -0.0,
+       0.1611
+      ]
+     }
+    },
+    "7d": {
+     "zero_extra": {
+      "k": 11,
+      "n": 20,
+      "share": 0.55,
+      "wilson": [
+       0.3421,
+       0.7418
+      ]
+     },
+     "median": 0.0,
+     "mean": 3.06,
+     "median_if_delayed": 6.89,
+     "over_3_days": {
+      "k": 9,
+      "n": 20,
+      "share": 0.45,
+      "wilson": [
+       0.2582,
+       0.6579
+      ]
+     }
+    },
+    "14d": {
+     "zero_extra": {
+      "k": 5,
+      "n": 20,
+      "share": 0.25,
+      "wilson": [
+       0.1119,
+       0.4687
+      ]
+     },
+     "median": 6.73,
+     "mean": 7.53,
+     "median_if_delayed": 13.81,
+     "over_3_days": {
+      "k": 13,
+      "n": 20,
+      "share": 0.65,
+      "wilson": [
+       0.4329,
+       0.8188
+      ]
+     }
+    }
+   },
+   "HIGH": {
+    "units": 384,
+    "packages": 48,
+    "fix_before_advisory": {
+     "k": 369,
+     "n": 384,
+     "share": 0.9609,
+     "wilson": [
+      0.9366,
+      0.9762
+     ]
+    },
+    "1d": {
+     "zero_extra": {
+      "k": 294,
+      "n": 384,
+      "share": 0.7656,
+      "wilson": [
+       0.7208,
+       0.8052
+      ]
+     },
+     "median": 0.0,
+     "mean": 0.18,
+     "median_if_delayed": 0.92,
+     "over_3_days": {
+      "k": 0,
+      "n": 384,
+      "share": 0.0,
+      "wilson": [
+       0.0,
+       0.0099
+      ]
+     }
+    },
+    "3d": {
+     "zero_extra": {
+      "k": 226,
+      "n": 384,
+      "share": 0.5885,
+      "wilson": [
+       0.5387,
+       0.6366
+      ]
+     },
+     "median": 0.0,
+     "mean": 0.93,
+     "median_if_delayed": 2.42,
+     "over_3_days": {
+      "k": 0,
+      "n": 384,
+      "share": 0.0,
+      "wilson": [
+       0.0,
+       0.0099
+      ]
+     }
+    },
+    "7d": {
+     "zero_extra": {
+      "k": 173,
+      "n": 384,
+      "share": 0.4505,
+      "wilson": [
+       0.4015,
+       0.5005
+      ]
+     },
+     "median": 2.05,
+     "mean": 2.84,
+     "median_if_delayed": 5.92,
+     "over_3_days": {
+      "k": 164,
+      "n": 384,
+      "share": 0.4271,
+      "wilson": [
+       0.3786,
+       0.477
+      ]
+     }
+    },
+    "14d": {
+     "zero_extra": {
+      "k": 141,
+      "n": 384,
+      "share": 0.3672,
+      "wilson": [
+       0.3205,
+       0.4165
+      ]
+     },
+     "median": 9.05,
+     "mean": 6.94,
+     "median_if_delayed": 12.87,
+     "over_3_days": {
+      "k": 224,
+      "n": 384,
+      "share": 0.5833,
+      "wilson": [
+       0.5334,
+       0.6316
+      ]
+     }
+    }
+   },
+   "MODERATE": {
+    "units": 305,
+    "packages": 42,
+    "fix_before_advisory": {
+     "k": 292,
+     "n": 305,
+     "share": 0.9574,
+     "wilson": [
+      0.9285,
+      0.9749
+     ]
+    },
+    "1d": {
+     "zero_extra": {
+      "k": 232,
+      "n": 305,
+      "share": 0.7607,
+      "wilson": [
+       0.7097,
+       0.8051
+      ]
+     },
+     "median": 0.0,
+     "mean": 0.18,
+     "median_if_delayed": 0.89,
+     "over_3_days": {
+      "k": 0,
+      "n": 305,
+      "share": 0.0,
+      "wilson": [
+       0.0,
+       0.0124
+      ]
+     }
+    },
+    "3d": {
+     "zero_extra": {
+      "k": 207,
+      "n": 305,
+      "share": 0.6787,
+      "wilson": [
+       0.6243,
+       0.7286
+      ]
+     },
+     "median": 0.0,
+     "mean": 0.78,
+     "median_if_delayed": 2.75,
+     "over_3_days": {
+      "k": 0,
+      "n": 305,
+      "share": 0.0,
+      "wilson": [
+       0.0,
+       0.0124
+      ]
+     }
+    },
+    "7d": {
+     "zero_extra": {
+      "k": 173,
+      "n": 305,
+      "share": 0.5672,
+      "wilson": [
+       0.5111,
+       0.6216
+      ]
+     },
+     "median": 0.0,
+     "mean": 2.3,
+     "median_if_delayed": 6.17,
+     "over_3_days": {
+      "k": 102,
+      "n": 305,
+      "share": 0.3344,
+      "wilson": [
+       0.2838,
+       0.3891
+      ]
+     }
+    },
+    "14d": {
+     "zero_extra": {
+      "k": 150,
+      "n": 305,
+      "share": 0.4918,
+      "wilson": [
+       0.4361,
+       0.5477
+      ]
+     },
+     "median": 2.08,
+     "mean": 5.64,
+     "median_if_delayed": 12.93,
+     "over_3_days": {
+      "k": 146,
+      "n": 305,
+      "share": 0.4787,
+      "wilson": [
+       0.4232,
+       0.5347
+      ]
+     }
+    }
+   },
+   "LOW": {
+    "units": 52,
+    "packages": 15,
+    "fix_before_advisory": {
+     "k": 49,
+     "n": 52,
+     "share": 0.9423,
+     "wilson": [
+      0.8436,
+      0.9802
+     ]
+    },
+    "1d": {
+     "zero_extra": {
+      "k": 44,
+      "n": 52,
+      "share": 0.8462,
+      "wilson": [
+       0.7248,
+       0.9199
+      ]
+     },
+     "median": 0.0,
+     "mean": 0.11,
+     "median_if_delayed": 0.89,
+     "over_3_days": {
+      "k": 0,
+      "n": 52,
+      "share": 0.0,
+      "wilson": [
+       0.0,
+       0.0688
+      ]
+     }
+    },
+    "3d": {
+     "zero_extra": {
+      "k": 40,
+      "n": 52,
+      "share": 0.7692,
+      "wilson": [
+       0.6387,
+       0.8628
+      ]
+     },
+     "median": 0.0,
+     "mean": 0.5,
+     "median_if_delayed": 2.54,
+     "over_3_days": {
+      "k": 0,
+      "n": 52,
+      "share": 0.0,
+      "wilson": [
+       0.0,
+       0.0688
+      ]
+     }
+    },
+    "7d": {
+     "zero_extra": {
+      "k": 34,
+      "n": 52,
+      "share": 0.6538,
+      "wilson": [
+       0.518,
+       0.7685
+      ]
+     },
+     "median": 0.0,
+     "mean": 1.66,
+     "median_if_delayed": 5.6,
+     "over_3_days": {
+      "k": 12,
+      "n": 52,
+      "share": 0.2308,
+      "wilson": [
+       0.1372,
+       0.3613
+      ]
+     }
+    },
+    "14d": {
+     "zero_extra": {
+      "k": 22,
+      "n": 52,
+      "share": 0.4231,
+      "wilson": [
+       0.2987,
+       0.5581
+      ]
+     },
+     "median": 1.52,
+     "mean": 4.8,
+     "median_if_delayed": 9.05,
+     "over_3_days": {
+      "k": 22,
+      "n": 52,
+      "share": 0.4231,
+      "wilson": [
+       0.2987,
+       0.5581
+      ]
+     }
+    }
+   }
+  },
+  "all_critical_high": {
+   "units": 2322,
+   "packages": 566,
+   "fix_before_advisory": {
+    "k": 2268,
+    "n": 2322,
+    "share": 0.9767,
+    "wilson": [
+     0.9698,
+     0.9821
+    ]
+   },
+   "1d": {
+    "zero_extra": {
+     "k": 1811,
+     "n": 2322,
+     "share": 0.7799,
+     "wilson": [
+      0.7626,
+      0.7963
+     ]
+    },
+    "median": 0.0,
+    "mean": 0.14,
+    "median_if_delayed": 0.71,
+    "over_3_days": {
+     "k": 0,
+     "n": 2322,
+     "share": 0.0,
+     "wilson": [
+      0.0,
+      0.0017
+     ]
+    }
+   },
+   "3d": {
+    "zero_extra": {
+     "k": 1407,
+     "n": 2322,
+     "share": 0.6059,
+     "wilson": [
+      0.5859,
+      0.6256
+     ]
+    },
+    "median": 0.0,
+    "mean": 0.77,
+    "median_if_delayed": 2.25,
+    "over_3_days": {
+     "k": 0,
+     "n": 2322,
+     "share": 0.0,
+     "wilson": [
+      0.0,
+      0.0017
+     ]
+    }
+   },
+   "7d": {
+    "zero_extra": {
+     "k": 1098,
+     "n": 2322,
+     "share": 0.4729,
+     "wilson": [
+      0.4526,
+      0.4932
+     ]
+    },
+    "median": 0.41,
+    "mean": 2.59,
+    "median_if_delayed": 5.71,
+    "over_3_days": {
+     "k": 974,
+     "n": 2322,
+     "share": 0.4195,
+     "wilson": [
+      0.3995,
+      0.4397
+     ]
+    }
+   },
+   "14d": {
+    "zero_extra": {
+     "k": 815,
+     "n": 2322,
+     "share": 0.351,
+     "wilson": [
+      0.3318,
+      0.3706
+     ]
+    },
+    "median": 7.41,
+    "mean": 6.77,
+    "median_if_delayed": 11.94,
+    "over_3_days": {
+     "k": 1415,
+     "n": 2322,
+     "share": 0.6094,
+     "wilson": [
+      0.5894,
+      0.629
+     ]
+    }
+   }
+  },
+  "top1000_concentration": {
+   "largest": [
+    [
+     "electron",
+     148
+    ],
+    [
+     "next",
+     106
+    ],
+    [
+     "axios",
+     76
+    ],
+    [
+     "@angular/platform-server",
+     35
+    ],
+    [
+     "@angular/core",
+     29
+    ]
+   ],
+   "package_weighted_zero_extra": {
+    "1d": 0.6588,
+    "3d": 0.5526,
+    "7d": 0.4127,
+    "14d": 0.3048
+   },
+   "excluding_largest_two": {
+    "units": 507,
+    "packages": 65,
+    "fix_before_advisory": {
+     "k": 477,
+     "n": 507,
+     "share": 0.9408,
+     "wilson": [
+      0.9168,
+      0.9582
+     ]
+    },
+    "1d": {
+     "zero_extra": {
+      "k": 374,
+      "n": 507,
+      "share": 0.7377,
+      "wilson": [
+       0.6977,
+       0.7741
+      ]
+     },
+     "median": 0.0,
+     "mean": 0.19,
+     "median_if_delayed": 0.87,
+     "over_3_days": {
+      "k": 0,
+      "n": 507,
+      "share": 0.0,
+      "wilson": [
+       0.0,
+       0.0075
+      ]
+     }
+    },
+    "3d": {
+     "zero_extra": {
+      "k": 305,
+      "n": 507,
+      "share": 0.6016,
+      "wilson": [
+       0.5584,
+       0.6433
+      ]
+     },
+     "median": 0.0,
+     "mean": 0.92,
+     "median_if_delayed": 2.54,
+     "over_3_days": {
+      "k": 0,
+      "n": 507,
+      "share": 0.0,
+      "wilson": [
+       0.0,
+       0.0075
+      ]
+     }
+    },
+    "7d": {
+     "zero_extra": {
+      "k": 238,
+      "n": 507,
+      "share": 0.4694,
+      "wilson": [
+       0.4264,
+       0.5129
+      ]
+     },
+     "median": 1.95,
+     "mean": 2.78,
+     "median_if_delayed": 5.99,
+     "over_3_days": {
+      "k": 210,
+      "n": 507,
+      "share": 0.4142,
+      "wilson": [
+       0.3721,
+       0.4576
+      ]
+     }
+    },
+    "14d": {
+     "zero_extra": {
+      "k": 183,
+      "n": 507,
+      "share": 0.3609,
+      "wilson": [
+       0.3203,
+       0.4037
+      ]
+     },
+     "median": 8.95,
+     "mean": 6.84,
+     "median_if_delayed": 12.92,
+     "over_3_days": {
+      "k": 295,
+      "n": 507,
+      "share": 0.5819,
+      "wilson": [
+       0.5385,
+       0.624
+      ]
+     }
+    }
+   }
+  }
+ }
+}

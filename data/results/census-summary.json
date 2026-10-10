@@ -1,0 +1,54 @@
+{
+ "dump_file": "npm-all.zip",
+ "n_mal_published_2026": 12856,
+ "id_prefix_counts": {
+  "MAL-2026": 12856,
+  "MAL-2026 id but published other year": 6
+ },
+ "by_month_published": {
+  "2026-01": 527,
+  "2026-02": 330,
+  "2026-03": 1047,
+  "2026-04": 619,
+  "2026-05": 1629,
+  "2026-06": 1431,
+  "2026-07": 2060,
+  "2026-08": 4082,
+  "2026-09": 905,
+  "2026-10": 226
+ },
+ "withdrawn": 163,
+ "with_explicit_versions": 10087,
+ "whole_package_range": 6625,
+ "sources_any": {
+  "amazon-inspector": 9936,
+  "ghsa-malware": 7543,
+  "ossf-package-analysis": 937,
+  "reversing-labs": 1830,
+  "google-open-source-security": 684
+ },
+ "vector_exclusive": {
+  "unclear": 6959,
+  "install_script": 3129,
+  "import_time": 2008,
+  "import_time+install_script": 600,
+  "bin": 45,
+  "bin+install_script": 33,
+  "bin+import_time": 26,
+  "runtime_call": 19,
+  "import_time+runtime_call": 19,
+  "bin+import_time+install_script": 12,
+  "bin+import_time+runtime_call": 3,
+  "import_time+install_script+runtime_call": 2,
+  "bin+runtime_call": 1
+ },
+ "vector_any": {
+  "install_script": 3776,
+  "import_time": 2670,
+  "runtime_call": 44,
+  "bin": 120
+ },
+ "explicit_no_install_script_and_no_install_hit": 437,
+ "vector_clear_fraction": 0.4587,
+ "vector_single_clear_fraction": 0.4046
+}

@@ -1,0 +1,203 @@
+{
+ "method": "Hand-coded by the analyst from advisory text only (no code), 30 records drawn at random (seed 7) from records the rule-based classifier labelled. 'exact' = label set matches; 'npm12_binary' = classifier and analyst agree on whether install scripts are the ONLY execution path (i.e. whether npm 12 script blocking alone would stop it).",
+ "classifier_version": "osv_census.py with negation handling (v3)",
+ "sample_file": "vector-validation-sample-v2.txt",
+ "verdicts": [
+  {
+   "i": 0,
+   "id": "MAL-2026-13943",
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 1,
+   "id": "MAL-2026-12191",
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 2,
+   "id": "MAL-2026-16049",
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 3,
+   "id": "MAL-2026-5895",
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 4,
+   "id": "MAL-2026-10932",
+   "exact": false,
+   "npm12_binary": false,
+   "note": "postinstall runs index.js; import label is spurious"
+  },
+  {
+   "i": 5,
+   "id": "MAL-2026-11491",
+   "exact": false,
+   "npm12_binary": false,
+   "note": "'browser-extension install' is about the payload, not an npm hook; true vector not stated"
+  },
+  {
+   "i": 6,
+   "id": "REDACTED-c23a2492df029bba",
+   "exact": false,
+   "npm12_binary": false,
+   "note": "runs on every require(); 'install-time telemetry' is loose wording"
+  },
+  {
+   "i": 7,
+   "id": "MAL-2026-11684",
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 8,
+   "id": "MAL-2026-1518",
+   "exact": true,
+   "npm12_binary": true,
+   "note": "preinstall in a remote tarball dependency; npm 12 allow-remote=none is also relevant"
+  },
+  {
+   "i": 9,
+   "id": "MAL-2026-4986",
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 10,
+   "id": "MAL-2026-11054",
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 11,
+   "id": "MAL-2026-4022",
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 12,
+   "id": "MAL-2026-12792",
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 13,
+   "id": "MAL-2026-10620",
+   "exact": false,
+   "npm12_binary": false,
+   "note": "preinstall runs index.js; import label is spurious"
+  },
+  {
+   "i": 14,
+   "id": "MAL-2026-11617",
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 15,
+   "id": "MAL-2026-17251",
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 16,
+   "id": "MAL-2026-16345",
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 17,
+   "id": "MAL-2026-11447",
+   "exact": false,
+   "npm12_binary": true,
+   "note": "exported listMods() function: runtime call, not import-time; both not blocked by npm 12"
+  },
+  {
+   "i": 18,
+   "id": "MAL-2026-13030",
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 19,
+   "id": "MAL-2026-11656",
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 20,
+   "id": "MAL-2026-4572",
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 21,
+   "id": "MAL-2026-16462",
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 22,
+   "id": "MAL-2026-11064",
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 23,
+   "id": "MAL-2026-4738",
+   "exact": null,
+   "npm12_binary": null,
+   "note": "postinstall confirmed; whether index.js also runs on require is not clear from the text"
+  },
+  {
+   "i": 24,
+   "id": "MAL-2026-11927",
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 25,
+   "id": "MAL-2026-12868",
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 26,
+   "id": "MAL-2026-5587",
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 27,
+   "id": "MAL-2026-5555",
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 28,
+   "id": "MAL-2026-4987",
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 29,
+   "id": "MAL-2026-11108",
+   "exact": true,
+   "npm12_binary": true
+  }
+ ],
+ "tally": {
+  "exact_true": 24,
+  "exact_false": 5,
+  "exact_unclear": 1,
+  "npm12_binary_true": 25,
+  "npm12_binary_false": 4,
+  "npm12_binary_unclear": 1
+ },
+ "first_sample_note": "An earlier sample (seed 42, vector-validation-sample.txt) on the classifier WITHOUT negation handling had 6 of 30 records wrongly labelled install_script from sentences such as 'declares no preinstall hooks'. That led to the negation rule."
+}

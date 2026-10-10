@@ -1,0 +1,30 @@
+[
+ {
+  "app": "insomnia",
+  "commit": "e10b4d2946c96c77a1074b0a33e5e482cb562e6c",
+  "ci_exit": 1,
+  "ci_secs": 24,
+  "ci_log_tail": "ns prior to v9 are no longer supported\nnpm error npm warn deprecated npmlog@5.0.1: This package is no longer supported.\nnpm error npm warn deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)\nnpm error npm warn deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.\nnpm error npm warn deprecated glob@7.1.3: Glob versions prior to v9 are no longer supported\nnpm error npm warn deprecated gauge@3.0.2: This package is no longer supported.\nnpm error npm warn deprecated are-we-there-yet@2.0.0: This package is no longer supported.\nnpm error npm warn deprecated glob@7.1.6: Glob versions prior to v9 are no longer supported\nnpm error npm warn deprecated sinon@9.2.0: 16.1.1\nnpm error npm warn deprecated eslint@7.12.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.\nnpm error npm notice run grpc-reflection-js@0.3.0 prepare\nnpm error npm notice run npm run compile\nnpm error npm warn using --force Recommended protections disabled.\nnpm error npm warn Unknown env config \"global-ignore-file\". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.\nnpm error npm error code 1\nnpm error npm error path <workdir>/apps/insomnia/.home/.npm/_cacache/tmp/git-cloneUjUKPc\nnpm error npm error command failed\nnpm error npm error command sh -c npm run compile\nnpm error npm error A complete log of this run can be found in: <workdir>/apps/insomnia/.home/.npm/_logs/2026-10-08T17_15_37_711Z-debug-0.log\nnpm error A complete log of this run can be found in: <workdir>/apps/insomnia/.home/.npm/_logs/2026-10-08T17_15_25_929Z-debug-0.log\n",
+  "blocked_ls": "No packages with unreviewed install scripts.\n",
+  "n_blocked": null,
+  "blocked_pkgs": []
+ },
+ {
+  "app": "desktop",
+  "commit": "61c577d1c429bc2e327732dd2ae4e7579dabf99c",
+  "ci_exit": 1,
+  "ci_secs": 20,
+  "ci_log_tail": "prefs@2.0.1 \u2714\nelectron-context-menu@4.0.4 \u2714\nmacos-notification-state@3.0.0 \u2714\n  \u2022 electron-builder  version=26.6.0\n  \u2022 loaded configuration  file=<workdir>/apps/desktop/electron-builder.ts\n  \u2022 executing @electron/rebuild  electronVersion=43.3.0 arch=x64 buildFromSource=false workspaceRoot=<workdir>/apps/desktop projectDir=./ appDir=./\n  \u2022 installing native dependencies  arch=x64\n  \u2022 preparing       moduleName=cf-prefs arch=x64\n  \u2a2f \nError: not found: make\n    at getNotFoundError (<workdir>/apps/desktop/node_modules/node-gyp/node_modules/which/lib/index.js:16:17)\n    at which (<workdir>/apps/desktop/node_modules/node-gyp/node_modules/which/lib/index.js:77:9)\n    at async doWhich (<workdir>/apps/desktop/node_modules/node-gyp/lib/build.js:120:22)\n    at async loadConfigGypi (<workdir>/apps/desktop/node_modules/node-gyp/lib/build.js:78:7)\n    at async build (<workdir>/apps/desktop/node_modules/node-gyp/lib/build.js:36:3)\n    at async process.<anonymous> (file://<workdir>/apps/desktop/node_modules/@electron/rebuild/lib/module-type/node-gyp/worker.js:22:13) {\n  code: 'ENOENT'\n}\n\n\n  \u2a2f node-gyp failed to rebuild '<workdir>/apps/desktop/node_modules/cf-prefs'  failedTask=installAppDeps stackTrace=Error: node-gyp failed to rebuild '<workdir>/apps/desktop/node_modules/cf-prefs'\n    at ChildProcess.<anonymous> (file://<workdir>/apps/desktop/node_modules/@electron/rebuild/lib/module-type/node-gyp/node-gyp.js:114:24)\n    at ChildProcess.emit (node:events:514:28)\n    at ChildProcess._handle.onexit (node:internal/child_process:295:12)\nnpm error code 1\nnpm error path <workdir>/apps/desktop\nnpm error command failed\nnpm error command sh -c patch-package && electron-builder install-app-deps && node node_modules/electron/install.js\nnpm error A complete log of this run can be found in: <workdir>/apps/desktop/.home/.npm/_logs/2026-10-08T17_15_50_506Z-debug-0.log\n",
+  "blocked_ls": "7 packages have install scripts blocked because they are not covered by allowScripts:\n  cf-prefs@2.0.1 (install: node-gyp rebuild)\n  electron-winstaller@5.4.0 (install: node ./script/select-7z-arch.js)\n  koffi@3.1.1 (install: node ./cnoke.cjs -P . -D src/koffi --prebuild --release)\n  macos-notification-state@3.0.0 (preinstall: node ensure-sdk.js; install: node-gyp rebuild)\n  mmjstool@1.0.0 (prepare: webpack)\n  registry-js@1.16.1 (install: prebuild-install || node-gyp rebuild)\n  windows-focus-assist@1.4.0 (install: node-gyp rebuild)\n\nRun `npm install-scripts approve <pkg>` to allow, or `npm install-scripts deny <pkg>` to deny.\n",
+  "n_blocked": 7,
+  "blocked_pkgs": [
+   "cf-prefs@2.0.1",
+   "electron-winstaller@5.4.0",
+   "koffi@3.1.1",
+   "macos-notification-state@3.0.0",
+   "mmjstool@1.0.0",
+   "registry-js@1.16.1",
+   "windows-focus-assist@1.4.0"
+  ]
+ }
+]

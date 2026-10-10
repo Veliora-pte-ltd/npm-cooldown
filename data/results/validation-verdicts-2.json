@@ -1,0 +1,680 @@
+{
+ "method": "Hand-coded by the analyst from advisory summary and details only, sample drawn by scripts/validation_sample.py (seed 20261008): 30 rule-labelled + 30 rule-'unclear' records, excluding withdrawn records and the 30 pilot records.",
+ "classifier_version": "osv_census.py v3 (negation-aware)",
+ "verdicts": [
+  {
+   "i": 0,
+   "id": "MAL-2026-13582",
+   "group": "labelled",
+   "rules": [
+    "import_time"
+   ],
+   "hand": [
+    "import_time"
+   ],
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 1,
+   "id": "MAL-2026-10775",
+   "group": "labelled",
+   "rules": [
+    "import_time"
+   ],
+   "hand": [
+    "import_time"
+   ],
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 2,
+   "id": "MAL-2026-17343",
+   "group": "labelled",
+   "rules": [
+    "install_script"
+   ],
+   "hand": [
+    "runtime_call"
+   ],
+   "exact": false,
+   "npm12_binary": false
+  },
+  {
+   "i": 3,
+   "id": "MAL-2026-13044",
+   "group": "labelled",
+   "rules": [
+    "import_time"
+   ],
+   "hand": [
+    "import_time"
+   ],
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 4,
+   "id": "MAL-2026-12229",
+   "group": "labelled",
+   "rules": [
+    "import_time"
+   ],
+   "hand": [
+    "import_time"
+   ],
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 5,
+   "id": "MAL-2026-13453",
+   "group": "labelled",
+   "rules": [
+    "install_script"
+   ],
+   "hand": [
+    "install_script"
+   ],
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 6,
+   "id": "MAL-2026-11633",
+   "group": "labelled",
+   "rules": [
+    "install_script"
+   ],
+   "hand": [
+    "install_script"
+   ],
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 7,
+   "id": "MAL-2026-12812",
+   "group": "labelled",
+   "rules": [
+    "import_time"
+   ],
+   "hand": [
+    "runtime_call"
+   ],
+   "exact": false,
+   "npm12_binary": true
+  },
+  {
+   "i": 8,
+   "id": "MAL-2026-13848",
+   "group": "labelled",
+   "rules": [
+    "install_script"
+   ],
+   "hand": [
+    "install_script"
+   ],
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 9,
+   "id": "MAL-2026-6453",
+   "group": "labelled",
+   "rules": [
+    "install_script"
+   ],
+   "hand": [
+    "install_script"
+   ],
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 10,
+   "id": "MAL-2026-12844",
+   "group": "labelled",
+   "rules": [
+    "import_time"
+   ],
+   "hand": [
+    "import_time"
+   ],
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 11,
+   "id": "MAL-2026-16286",
+   "group": "labelled",
+   "rules": [
+    "install_script"
+   ],
+   "hand": [
+    "install_script"
+   ],
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 12,
+   "id": "MAL-2026-11922",
+   "group": "labelled",
+   "rules": [
+    "install_script"
+   ],
+   "hand": [
+    "install_script"
+   ],
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 13,
+   "id": "MAL-2026-4937",
+   "group": "labelled",
+   "rules": [
+    "install_script"
+   ],
+   "hand": [
+    "install_script"
+   ],
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 14,
+   "id": "REDACTED-01a464e1e1cf6a14",
+   "group": "labelled",
+   "rules": [
+    "import_time"
+   ],
+   "hand": [
+    "import_time"
+   ],
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 15,
+   "id": "MAL-2026-10498",
+   "group": "labelled",
+   "rules": [
+    "install_script"
+   ],
+   "hand": [
+    "install_script"
+   ],
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 16,
+   "id": "MAL-2026-16147",
+   "group": "labelled",
+   "rules": [
+    "import_time"
+   ],
+   "hand": [
+    "import_time"
+   ],
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 17,
+   "id": "MAL-2026-1529",
+   "group": "labelled",
+   "rules": [
+    "install_script"
+   ],
+   "hand": [
+    "install_script"
+   ],
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 18,
+   "id": "REDACTED-4ad88dd17cb8367e",
+   "group": "labelled",
+   "rules": [
+    "import_time"
+   ],
+   "hand": [
+    "import_time"
+   ],
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 19,
+   "id": "MAL-2026-13015",
+   "group": "labelled",
+   "rules": [
+    "import_time"
+   ],
+   "hand": [
+    "import_time"
+   ],
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 20,
+   "id": "MAL-2026-13534",
+   "group": "labelled",
+   "rules": [
+    "import_time"
+   ],
+   "hand": [
+    "import_time"
+   ],
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 21,
+   "id": "MAL-2026-17578",
+   "group": "labelled",
+   "rules": [
+    "import_time"
+   ],
+   "hand": [
+    "import_time"
+   ],
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 22,
+   "id": "MAL-2026-11096",
+   "group": "labelled",
+   "rules": [
+    "import_time"
+   ],
+   "hand": [
+    "import_time"
+   ],
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 23,
+   "id": "MAL-2026-12602",
+   "group": "labelled",
+   "rules": [
+    "import_time"
+   ],
+   "hand": [
+    "import_time"
+   ],
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 24,
+   "id": "MAL-2026-11692",
+   "group": "labelled",
+   "rules": [
+    "install_script"
+   ],
+   "hand": [
+    "install_script"
+   ],
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 25,
+   "id": "MAL-2026-4713",
+   "group": "labelled",
+   "rules": [
+    "install_script"
+   ],
+   "hand": [
+    "install_script"
+   ],
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 26,
+   "id": "MAL-2026-13566",
+   "group": "labelled",
+   "rules": [
+    "import_time"
+   ],
+   "hand": [
+    "import_time"
+   ],
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 27,
+   "id": "MAL-2026-6266",
+   "group": "labelled",
+   "rules": [
+    "install_script",
+    "import_time"
+   ],
+   "hand": [
+    "install_script"
+   ],
+   "exact": false,
+   "npm12_binary": false
+  },
+  {
+   "i": 28,
+   "id": "MAL-2026-16227",
+   "group": "labelled",
+   "rules": [
+    "install_script"
+   ],
+   "hand": [
+    "install_script"
+   ],
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 29,
+   "id": "MAL-2026-3935",
+   "group": "labelled",
+   "rules": [
+    "install_script"
+   ],
+   "hand": [
+    "install_script"
+   ],
+   "exact": true,
+   "npm12_binary": true
+  },
+  {
+   "i": 30,
+   "id": "MAL-2026-2031",
+   "group": "unclear",
+   "rules": [],
+   "hand": [],
+   "vector_stated": false,
+   "missed_install_script": false
+  },
+  {
+   "i": 31,
+   "id": "MAL-2026-202",
+   "group": "unclear",
+   "rules": [],
+   "hand": [],
+   "vector_stated": false,
+   "missed_install_script": false
+  },
+  {
+   "i": 32,
+   "id": "MAL-2026-10834",
+   "group": "unclear",
+   "rules": [],
+   "hand": [],
+   "vector_stated": false,
+   "missed_install_script": false
+  },
+  {
+   "i": 33,
+   "id": "MAL-2026-10156",
+   "group": "unclear",
+   "rules": [],
+   "hand": [
+    "runtime_call"
+   ],
+   "vector_stated": true,
+   "missed_install_script": false
+  },
+  {
+   "i": 34,
+   "id": "MAL-2026-7312",
+   "group": "unclear",
+   "rules": [],
+   "hand": [],
+   "vector_stated": false,
+   "missed_install_script": false
+  },
+  {
+   "i": 35,
+   "id": "MAL-2026-1589",
+   "group": "unclear",
+   "rules": [],
+   "hand": [],
+   "vector_stated": false,
+   "missed_install_script": false
+  },
+  {
+   "i": 36,
+   "id": "MAL-2026-11185",
+   "group": "unclear",
+   "rules": [],
+   "hand": [],
+   "vector_stated": false,
+   "missed_install_script": false
+  },
+  {
+   "i": 37,
+   "id": "MAL-2026-6924",
+   "group": "unclear",
+   "rules": [],
+   "hand": [],
+   "vector_stated": false,
+   "missed_install_script": false
+  },
+  {
+   "i": 38,
+   "id": "MAL-2026-2325",
+   "group": "unclear",
+   "rules": [],
+   "hand": [],
+   "vector_stated": false,
+   "missed_install_script": false
+  },
+  {
+   "i": 39,
+   "id": "MAL-2026-10884",
+   "group": "unclear",
+   "rules": [],
+   "hand": [],
+   "vector_stated": false,
+   "missed_install_script": false
+  },
+  {
+   "i": 40,
+   "id": "MAL-2026-15436",
+   "group": "unclear",
+   "rules": [],
+   "hand": [],
+   "vector_stated": false,
+   "missed_install_script": false
+  },
+  {
+   "i": 41,
+   "id": "MAL-2026-7340",
+   "group": "unclear",
+   "rules": [],
+   "hand": [],
+   "vector_stated": false,
+   "missed_install_script": false
+  },
+  {
+   "i": 42,
+   "id": "MAL-2026-336",
+   "group": "unclear",
+   "rules": [],
+   "hand": [],
+   "vector_stated": false,
+   "missed_install_script": false
+  },
+  {
+   "i": 43,
+   "id": "MAL-2026-2756",
+   "group": "unclear",
+   "rules": [],
+   "hand": [],
+   "vector_stated": false,
+   "missed_install_script": false
+  },
+  {
+   "i": 44,
+   "id": "MAL-2026-367",
+   "group": "unclear",
+   "rules": [],
+   "hand": [],
+   "vector_stated": false,
+   "missed_install_script": false
+  },
+  {
+   "i": 45,
+   "id": "MAL-2026-1101",
+   "group": "unclear",
+   "rules": [],
+   "hand": [],
+   "vector_stated": false,
+   "missed_install_script": false
+  },
+  {
+   "i": 46,
+   "id": "MAL-2026-15343",
+   "group": "unclear",
+   "rules": [],
+   "hand": [],
+   "vector_stated": false,
+   "missed_install_script": false
+  },
+  {
+   "i": 47,
+   "id": "MAL-2026-12347",
+   "group": "unclear",
+   "rules": [],
+   "hand": [
+    "runtime_call"
+   ],
+   "vector_stated": true,
+   "missed_install_script": false
+  },
+  {
+   "i": 48,
+   "id": "MAL-2026-15843",
+   "group": "unclear",
+   "rules": [],
+   "hand": [],
+   "vector_stated": false,
+   "missed_install_script": false
+  },
+  {
+   "i": 49,
+   "id": "MAL-2026-918",
+   "group": "unclear",
+   "rules": [],
+   "hand": [],
+   "vector_stated": false,
+   "missed_install_script": false
+  },
+  {
+   "i": 50,
+   "id": "MAL-2026-10789",
+   "group": "unclear",
+   "rules": [],
+   "hand": [],
+   "vector_stated": false,
+   "missed_install_script": false
+  },
+  {
+   "i": 51,
+   "id": "MAL-2026-11228",
+   "group": "unclear",
+   "rules": [],
+   "hand": [],
+   "vector_stated": false,
+   "missed_install_script": false
+  },
+  {
+   "i": 52,
+   "id": "MAL-2026-6679",
+   "group": "unclear",
+   "rules": [],
+   "hand": [],
+   "vector_stated": false,
+   "missed_install_script": false
+  },
+  {
+   "i": 53,
+   "id": "MAL-2026-12011",
+   "group": "unclear",
+   "rules": [],
+   "hand": [],
+   "vector_stated": false,
+   "missed_install_script": false
+  },
+  {
+   "i": 54,
+   "id": "MAL-2026-520",
+   "group": "unclear",
+   "rules": [],
+   "hand": [],
+   "vector_stated": false,
+   "missed_install_script": false
+  },
+  {
+   "i": 55,
+   "id": "MAL-2026-15150",
+   "group": "unclear",
+   "rules": [],
+   "hand": [],
+   "vector_stated": false,
+   "missed_install_script": false
+  },
+  {
+   "i": 56,
+   "id": "MAL-2026-1430",
+   "group": "unclear",
+   "rules": [],
+   "hand": [],
+   "vector_stated": false,
+   "missed_install_script": false
+  },
+  {
+   "i": 57,
+   "id": "MAL-2026-14821",
+   "group": "unclear",
+   "rules": [],
+   "hand": [],
+   "vector_stated": false,
+   "missed_install_script": false
+  },
+  {
+   "i": 58,
+   "id": "MAL-2026-7256",
+   "group": "unclear",
+   "rules": [],
+   "hand": [],
+   "vector_stated": false,
+   "missed_install_script": false
+  },
+  {
+   "i": 59,
+   "id": "MAL-2026-5962",
+   "group": "unclear",
+   "rules": [],
+   "hand": [],
+   "vector_stated": false,
+   "missed_install_script": false
+  }
+ ],
+ "notes": {
+  "2": "Baileys fork family: injected code runs when the WhatsApp socket connects (runtime), not at install; rules hit a later sentence.",
+  "7": "Remote code fetched inside getPlugin(); runs when called, not clearly at require().",
+  "27": "preinstall downloads and runs index.js; the import_time hit is the install payload itself. Install-only.",
+  "9": "binding.gyp <!(...) runs during npm's implicit node-gyp install step: counted as an install script (npm 12 blocks it).",
+  "17": "PhantomRaven remote dynamic dependency: URL dependency plus preinstall. npm 12 blocks both (allow-remote default none, scripts blocked).",
+  "33": "Runs when exported middleware is first invoked.",
+  "47": "Runs when the exported constructor is used."
+ }
+}

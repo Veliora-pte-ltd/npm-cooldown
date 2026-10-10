@@ -1,0 +1,19 @@
+{
+  "name": "npm-cooldown",
+  "version": "0.1.0",
+  "description": "Cooldown (minimum release age) settings for npm, pnpm, Yarn and Bun, a lockfile checker, and the data behind Veliora's npm 12 note.",
+  "type": "module",
+  "bin": { "npm-cooldown": "bin/npm-cooldown.js" },
+  "files": ["bin", "src"],
+  "scripts": {
+    "test": "node --test test/",
+    "test:live": "NPM_COOLDOWN_LIVE=1 node --test test/"
+  },
+  "engines": { "node": ">=18.17" },
+  "keywords": ["npm", "pnpm", "yarn", "bun", "supply-chain-security", "cooldown", "minimumReleaseAge", "min-release-age", "lockfile"],
+  "homepage": "https://veliora.works/engineering/npm-12-cooldown-2026-attacks/",
+  "repository": { "type": "git", "url": "git+https://github.com/Veliora-pte-ltd/npm-cooldown.git" },
+  "license": "MIT",
+  "author": "Veliora (https://veliora.works/)",
+  "private": true
+}

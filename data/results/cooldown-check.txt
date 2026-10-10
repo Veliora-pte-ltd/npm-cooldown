@@ -1,0 +1,16 @@
+npm 12.2.0, min-release-age=none -> vite 8.3.4 ; package.json spec: {'vite': '^8.3.4'}
+npm 12.2.0, min-release-age=7 -> vite 8.3.2 ; package.json spec: {'vite': '^8.3.2'}
+pnpm 10.33.4, minimumReleaseAge=0 min -> vite 
+pnpm 10.33.4, minimumReleaseAge=10080 min -> vite 
+vite 8.3.4 2026-10-08T12:07:04.441Z
+vite 8.3.3 2026-10-06T04:10:19.326Z
+vite 8.3.2 2026-10-01T10:17:44.767Z
+vite 8.3.1 2026-09-24T12:26:19.940Z
+vite 8.3.0 2026-09-10T11:30:26.283Z
+checked at 2026-10-08T16:54:16Z
+pnpm , minimumReleaseAge=0 min -> 
+pnpm , minimumReleaseAge=10080 min -> 
+pnpm , no setting (default) -> 
+pnpm 12.10.1, minimumReleaseAge=default (minutes) ->   vite@8.3.3
+pnpm 12.10.1, minimumReleaseAge=0 (minutes) ->   vite@8.3.4
+pnpm 12.10.1, minimumReleaseAge=10080 (minutes) ->   vite@8.3.2

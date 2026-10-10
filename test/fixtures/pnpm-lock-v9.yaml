@@ -1,0 +1,38 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      vite:
+        specifier: ^8.3.2
+        version: 8.3.3(@types/node@24.0.0)
+
+packages:
+
+  '@types/node@24.0.0':
+    resolution: {integrity: sha512-a}
+
+  vite@8.3.3:
+    resolution: {integrity: sha512-b}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    hasBin: true
+
+  picomatch@4.0.2:
+    resolution: {integrity: sha512-c}
+
+  my-fork@https://codeload.github.com/example/my-fork/tar.gz/abc:
+    resolution: {tarball: https://codeload.github.com/example/my-fork/tar.gz/abc}
+    version: 1.0.0
+
+snapshots:
+
+  '@types/node@24.0.0': {}
+
+  vite@8.3.3(@types/node@24.0.0):
+    dependencies:
+      picomatch: 4.0.2

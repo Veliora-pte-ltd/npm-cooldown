@@ -1,0 +1,12 @@
+[
+ {"repo":"bitwarden/clients","category":"Electron + Angular monorepo (npm workspaces)"},
+ {"repo":"Kong/insomnia","category":"Electron desktop app"},
+ {"repo":"mattermost/desktop","category":"Electron desktop app"},
+ {"repo":"jellyfin/jellyfin-web","category":"web front end"},
+ {"repo":"louislam/uptime-kuma","category":"self-hosted web app with native SQLite"},
+ {"repo":"danny-avila/LibreChat","category":"full-stack monorepo (npm workspaces)"},
+ {"repo":"parse-community/parse-server","category":"Node API server"},
+ {"repo":"nestjs/nest","category":"Node framework monorepo"},
+ {"repo":"typeorm/typeorm","category":"Node library with native DB drivers"},
+ {"repo":"videojs/video.js","category":"browser library"}
+]

@@ -1,0 +1,17 @@
+lockfileVersion: 5.4
+
+specifiers:
+  react-dom: ^18.2.0
+
+packages:
+
+  /react-dom/18.2.0_react@18.2.0:
+    resolution: {integrity: sha512-a}
+    peerDependencies:
+      react: ^18.2.0
+
+  /react/18.2.0:
+    resolution: {integrity: sha512-b}
+
+  /@babel/core/7.24.0_@babel+types@7.24.0:
+    resolution: {integrity: sha512-c}

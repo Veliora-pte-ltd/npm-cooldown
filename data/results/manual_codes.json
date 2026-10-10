@@ -1,0 +1,53 @@
+{
+ "method": "Hand-coded by the analyst from the OSV advisory text (and, where the text is silent, nothing else: such campaigns stay 'unknown'). Campaigns are matched by the regex in 'pattern' over OSV summary + details. Code = the execution path for someone who installs the package as a dependency. npm 12 blocking of binding.gyp ('implicit install script') was checked in npm 12.2.0 source: arborist/lib/arborist/rebuild.js sets scripts.install = node-gyp rebuild for gyp packages and then applies the same allowScripts gate.",
+ "campaigns": [
+  {
+   "key": "shai_hulud_aug",
+   "label": "Shai-Hulud 'Here We Go Again' worm (August 2026, began with keyv/cacheable)",
+   "pattern": "Here We Go Again|keyv and cacheable",
+   "code": "install_only",
+   "evidence": "Every poisoned release adds a preinstall hook (\"preinstall\": \"node setup.mjs\") that runs on a bare npm install, before any project code."
+  },
+  {
+   "key": "mini_shai_hulud_atool",
+   "label": "Mini Shai-Hulud, compromised 'atool' account (@antv and others)",
+   "pattern": "compromised the npm account `atool`",
+   "code": "install_only",
+   "evidence": "Each malicious version injects a preinstall hook that executes a 498KB obfuscated Bun script."
+  },
+  {
+   "key": "mini_shai_hulud_redhat",
+   "label": "Mini Shai-Hulud, Red Hat Cloud Services trusted publisher",
+   "pattern": "Red Hat Cloud Services",
+   "code": "install_only",
+   "evidence": "The attacker injected a preinstall hook into this and 31 other packages in the @redhat-cloud-services scope."
+  },
+  {
+   "key": "miasma_leo",
+   "label": "Miasma worm, LeoPlatform packages (June 2026)",
+   "pattern": "Miasma worm",
+   "code": "install_only",
+   "evidence": "Triggered during npm install via a binding.gyp file using node-gyp command expansion; npm 12 gates the implicit gyp install script (source-checked)."
+  },
+  {
+   "key": "sap_cap",
+   "label": "SAP CAP packages (April 2026)",
+   "pattern": "cloudmtabot",
+   "code": "install_only",
+   "evidence": "preinstall hook of \"node setup.mjs\"."
+  },
+  {
+   "key": "mini_shai_hulud_back",
+   "label": "'Mini Shai-Hulud is back' (TeamPCP; began with @tanstack Router/Start, 11 May 2026)",
+   "pattern": "Mini Shai-Hulud is back",
+   "code": "install_only",
+   "evidence": "OSV text is silent. TanStack postmortem (tanstack.com/blog/npm-supply-chain-compromise-postmortem, read 8 Oct 2026): npm resolves a malicious optionalDependencies entry pointing at a GitHub commit and runs its prepare lifecycle script; the worm 'republishes them with the same injection'. npm 12 blocks git dependencies by default (allow-git=none; observed as EALLOWGIT in the friction run). Note: with allow-git=all, npm 12.2.0 did run a git dependency's prepare step in the friction follow-up, so the allow-git default, not allowScripts, is what stops this vector. Coded 'install_only' here in the sense of 'stopped by npm 12 defaults'. Coding the whole wave from the TanStack mechanism is an assumption."
+  }
+ ],
+ "validation_of_removal_times": {
+  "tanstack": "Postmortem: npm removed tarballs 22:13-23:55 UTC on 11 May 2026, i.e. 2h53m-4h35m after the 19:20 UTC publish. Our packuments give no removal time for these 42 records (later clean versions exist); OSV published 23:37 UTC 11 May to 00:33 UTC 12 May.",
+  "cacheable": "time.modified gives 1.28 h; OSV published 1.29 h after publish.",
+  "subql_common": "time.modified gives 0.83 h (50 min).",
+  "antv_attr": "time.modified gives 3,006.8 h (about 125 days) for a Mini Shai-Hulud version; OSV published within minutes of publish. time.modified is therefore unreliable for established packages, which receive later metadata edits."
+ }
+}

@@ -1,0 +1,129 @@
+{
+ "apps_listed": 10,
+ "excluded": 3,
+ "tested": 7,
+ "ci_failed_eallowgit": 2,
+ "installed": 5,
+ "installed_with_blocked_scripts": 4,
+ "blocked_counts": [
+  3,
+  4,
+  7,
+  15
+ ],
+ "apps_with_preexisting_allowScripts": 2,
+ "builds_tried_with_scripts_blocked": 3,
+ "builds_ok_with_scripts_blocked": 3,
+ "approve_rebuild_ok": 4,
+ "apps": [
+  {
+   "repo": "bitwarden/clients",
+   "commit": "82809d5c8c5e79aabfe52e893d67c82ce68aa6c2",
+   "excluded": null,
+   "ci_ok": true,
+   "ci_error": null,
+   "n_blocked": 15,
+   "preexisting_allowScripts": null,
+   "has_build": false,
+   "build_ok_with_scripts_blocked": null,
+   "approve_rebuild_ok": true
+  },
+  {
+   "repo": "Kong/insomnia",
+   "commit": "e10b4d2946c96c77a1074b0a33e5e482cb562e6c",
+   "excluded": null,
+   "ci_ok": false,
+   "ci_error": "EALLOWGIT",
+   "n_blocked": 0,
+   "preexisting_allowScripts": 9,
+   "has_build": false,
+   "build_ok_with_scripts_blocked": null,
+   "approve_rebuild_ok": null,
+   "followup_allow_git": {
+    "ci_ok": false,
+    "n_blocked": null,
+    "note": "install then failed while npm ran the git dependency's prepare step (not investigated)"
+   }
+  },
+  {
+   "repo": "mattermost/desktop",
+   "commit": "61c577d1c429bc2e327732dd2ae4e7579dabf99c",
+   "excluded": null,
+   "ci_ok": false,
+   "ci_error": "EALLOWGIT",
+   "n_blocked": 0,
+   "preexisting_allowScripts": 0,
+   "has_build": true,
+   "build_ok_with_scripts_blocked": null,
+   "approve_rebuild_ok": null,
+   "followup_allow_git": {
+    "ci_ok": false,
+    "n_blocked": 7,
+    "note": "install then failed in the app's own postinstall: electron-builder could not find `make` in the sandbox (no build tools installed in the sandbox)"
+   }
+  },
+  {
+   "repo": "jellyfin/jellyfin-web",
+   "commit": "d93e8b419058ab337e2d32651d873ca76c84e296",
+   "excluded": null,
+   "ci_ok": true,
+   "ci_error": null,
+   "n_blocked": 3,
+   "preexisting_allowScripts": null,
+   "has_build": false,
+   "build_ok_with_scripts_blocked": null,
+   "approve_rebuild_ok": true
+  },
+  {
+   "repo": "louislam/uptime-kuma",
+   "commit": "0d9728993df67b50505aeb0aff89dfd27b96fa06",
+   "excluded": null,
+   "ci_ok": true,
+   "ci_error": null,
+   "n_blocked": 0,
+   "preexisting_allowScripts": 17,
+   "has_build": true,
+   "build_ok_with_scripts_blocked": true,
+   "approve_rebuild_ok": null
+  },
+  {
+   "repo": "danny-avila/LibreChat",
+   "commit": "e1dfc10449ff713faffacd60273fddcfe2c0a698",
+   "excluded": null,
+   "ci_ok": true,
+   "ci_error": null,
+   "n_blocked": 7,
+   "preexisting_allowScripts": null,
+   "has_build": true,
+   "build_ok_with_scripts_blocked": true,
+   "approve_rebuild_ok": true
+  },
+  {
+   "repo": "parse-community/parse-server",
+   "commit": "0c4db0a18388277fd402ae695d793b47fc5528e3",
+   "excluded": null,
+   "ci_ok": true,
+   "ci_error": null,
+   "n_blocked": 4,
+   "preexisting_allowScripts": null,
+   "has_build": true,
+   "build_ok_with_scripts_blocked": true,
+   "approve_rebuild_ok": true
+  },
+  {
+   "repo": "nestjs/nest",
+   "commit": "f4b5ff48bccd6e593acb11dfdd55007ad4a5f4f8",
+   "excluded": "npm ci fails with ERESOLVE (peer graphql conflict). Not one of the npm 12 defaults we test; without an npm 11 baseline we cannot say whether npm 11 would also fail"
+  },
+  {
+   "repo": "typeorm/typeorm",
+   "commit": "9f5a345d23b87e4ffdc282b441f6ff15c426c130",
+   "excluded": "pnpm project (devEngines requires pnpm); npm is the wrong tool"
+  },
+  {
+   "repo": "videojs/video.js",
+   "commit": "74cf8cd93f18b0dd55bd00fdb22ed2703da3a1a2",
+   "excluded": "no package-lock.json, so npm ci cannot run (app list error)"
+  }
+ ]
+}
